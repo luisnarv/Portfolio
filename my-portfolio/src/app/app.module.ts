@@ -7,6 +7,7 @@ import { HomePageComponent } from './components/home-page/home-page.component';
 import { ProjetcsComponent } from './components/projetcs/projetcs.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { DesingProjectsComponent } from './components/desing-projects/desing-projects.component';
+import { DetailComponent } from './components/detail/detail.component';
 
 
 @NgModule({
@@ -15,7 +16,8 @@ import { DesingProjectsComponent } from './components/desing-projects/desing-pro
     HomePageComponent,
     ProjetcsComponent,
     NavbarComponent,
-    DesingProjectsComponent
+    DesingProjectsComponent,
+    DetailComponent
   ],
   imports: [
     BrowserModule,
