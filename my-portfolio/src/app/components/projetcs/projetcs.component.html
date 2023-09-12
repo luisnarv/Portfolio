@@ -1,0 +1,39 @@
+<div class="main-projects">
+    <app-navbar></app-navbar>
+    <router-outlet></router-outlet>
+    <div class="style">
+        <section class="left"></section>
+        <section class="right"></section>
+    </div>
+
+    <div class="projects">
+
+        <div class="nextPage">
+            <button class="buttonLEft" (click)="changueCardRight()">{{"flecha derecha"}}</button>
+           <button class="buttonRight" (click)="changueCardLeft()">{{"flecha izquierda"}}
+           </button>
+       </div>
+
+        proyects
+        <!-- <section>
+            <ul>
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+            </ul>
+            <img src="./../../../assets/Image/Sin título.png" alt="prueba.png" width="100%" height="100%">
+        </section> -->
+
+        
+        <section *ngFor="let pro of projects.slice(this.left,this.right)" >
+            <ul>
+                <li>{{pro.title}}</li>
+                <li>{{pro.img}}</li>
+                <li>{{pro.descripcion}}</li>
+            </ul>
+            <img src="./../../../assets/Image/Sin título.png" alt="prueba.png" width="100%" height="100%">
+        </section>
+
+
+    </div>
+</div>

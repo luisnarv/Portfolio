@@ -1,0 +1,27 @@
+
+
+.navbar{
+    display: flex;
+   width: 100vw;
+   height: 60px;
+   padding: 15px;
+   background-color: #1c2467;
+   color: white;
+}
+
+.navbar span{
+    width: 40%;
+}
+
+.projects-menu{
+    width: 60%;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    color: white;
+}
+
+.projects-menu li{
+list-style: none;
+margin: 10px;
+}

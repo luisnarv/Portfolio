@@ -1,0 +1,71 @@
+.main-projects{
+    overflow: hidden;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+
+.direccional{
+    width: 90vw;
+    top: 50%;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+  
+}
+
+.direccional img{
+    width: 50px;
+    height: 50px;
+}
+
+
+.left{
+    width: 60%;
+    height: 100%;
+}
+.right {
+    background-color: #1c2467;
+    width: 40%;
+    margin-top: -10%;
+    height: 250%;
+    rotate: 9deg;
+}
+
+
+
+.projects{
+    width: 100vw;
+    height: 100%;
+    padding: 100px;
+    overflow-y: auto;
+}
+
+.projects ul{
+    width: 40%;
+}
+
+/* .projects img{
+    width: 60%;
+} */
+
+.projects section{
+    display: flex;
+}
+
+
+
+.images{
+    display: flex;
+    width: 60%;
+}
+
+
+.Projetc-info{
+    display: flex;
+    flex-direction:row;
+}
+
+.Projetc-info ul{
+    width: 40%;
+}
