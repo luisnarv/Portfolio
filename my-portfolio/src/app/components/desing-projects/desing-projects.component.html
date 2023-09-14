@@ -21,7 +21,7 @@
 
                 <span *ngFor="let image of pro.img">
                     <a href="/detail">
-                        <img src={{image}} alt="prueba.png" width="100%" height="100%s">
+                        <img (click)="getID(pro.title)" src={{image}} alt="prueba.png" width="100%" height="100%s">
                     </a>
                 </span>
 
