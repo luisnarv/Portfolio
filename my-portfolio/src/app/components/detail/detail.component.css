@@ -9,14 +9,18 @@
 }
 
 .mainDetail img{
- border-radius: 50px;  
+ border-radius: 50px; 
+
 }
 
-hr{width: 100%;}
+hr{
+    width: 100%;
+    margin: 50px 0;
+}
 
 .titleDetail{
     width: 100%;
-    height: 600px;
+    height: 100vh;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -28,8 +32,8 @@ hr{width: 100%;}
     display: flex;
     align-items: center;
     text-align: justify;
+
     margin: 10px;
-    margin-bottom: 200px;
 
 }
 
@@ -39,26 +43,38 @@ hr{width: 100%;}
     flex-direction: column;
 }
 
-.summaryProject ul{
+/* ------------------------------------------------------ */
+
+.summaryCharac{
+    background-color: white;
+    width: 100vw;
+    height: 100%;
     display: flex;
-   
+    justify-content: center;    
 }
 
-.summaryProject li{
-    margin: 10px;
+.summaryCharac ul{
     display: flex;
     flex-direction: column;
     align-items: center;
-    list-style: none;
-}
-.summaryProject p{
-    width: 700px;
-    margin: 5px;
+    width: 50vw;
 }
 
+.summaryCharac li{
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    text-align: justify;
+    width: 100%;
+    height: 100%;
+  
+}
+
+/* ------------------------------------------------------------------------------------------ */
 
 .users{
-    margin-bottom: 100px
+    height: 100vh;
 }
 
 .users ol{
@@ -67,7 +83,7 @@ hr{width: 100%;}
 
 .usersPerson{
     display: flex;
-    margin-bottom: 100px;
+    align-items: center;
 }
 
 .usersPerson span{
@@ -76,13 +92,40 @@ hr{width: 100%;}
     margin: 10px;
 }
 
+.schemasScreen{
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+    width: 100%;
+}
+
+.schemasScreen span {
+    width: 50%;
+}
+
+.schemasScreen img{
+    margin: 0 0 0 50px;
+}
+.schemasScreen a{
+    text-decoration: none;
+    color: black;
+}
+
 
 .usersMockups{
     display: flex;
     flex-direction: column;
-    align-content: center;
     align-items: center;
+    width: 100%;
 }
+
+.usersMockups p{
+    margin:20px 0;
+}
+.usersMockups div{
+    height: 100vh;
+}
+
 
 .usersAccesibility ol{
     display: flex;
@@ -92,10 +135,23 @@ hr{width: 100%;}
 }
 
 
-.next ol{
+.conclusions ol{
 display: flex;
 }
 
-.next li{
+.conclusions li{
     margin: 20px;
+}
+
+.next li{
+    margin: 10px 0;
+}
+
+
+.end{
+    height: 100vh;
+}
+
+.end p{
+    margin: 20px 0;
 }
