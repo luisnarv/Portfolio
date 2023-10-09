@@ -1,12 +1,12 @@
 // import "../../../assets/Image/Design/proyecto2/"
 export const projectsDesign = [{
-    title: "Restaurant App",
+    title: "Ambrosía Española",
     author: "Luis Narvaez",
 
     summaryProject: {
         descripcion: [
-            "Es una aplicación para un restaurante de comida española, para ampliar su área de trabajo quieren tener una aplicación que permita ordenar un pedido que se pueda reservar una mesa, también quieren agregar una función para ordenar un domicilio o ir a recoger al local, ofrecen una amplia gama de alimentos y precios competitivos."
-            , "Apunta a clientes como Familias, personas o trabajadores que prefieren variar y mantener su salud o aquellos que no tienen el tiempo o la capacidad para preparar una cena familiar.",
+            ' "Ambrosía Española" es un auténtico restaurante de cocina española que se enorgullece de brindar a sus clientes una experiencia culinaria española de primera calidad. Con la visión de expandir sus servicios, estamos desarrollando una aplicación que permitirá a los usuarios realizar pedidos y reservar mesas de manera eficiente, opción de entrega a domicilio y la posibilidad de recoger los pedidos en el local para una mayor comodidad.'
+            , 'Nuestra extensa selección de platos, acompañada de precios altamente competitivos, garantiza una oferta gastronómica que satisface diversos gustos y presupuestos. Esta aplicación está diseñada pensando en familias, individuos y profesionales ocupados que valoran la diversidad culinaria y desean mantener un estilo de vida saludable, o simplemente aquellos que buscan una solución conveniente para sus comidas familiares. Con "Ambrosía Española", la autenticidad de la cocina española se adapta a tu ritmo de vida.',
         ],
         time: "Julio 2023 - Agosto 2023",
         image: "../../../assets/Image/GitHub-Mark.png",
@@ -18,7 +18,7 @@ export const projectsDesign = [{
         },
         1: {
             title: "Objetivo",
-            descripcion: "Diseñar una aplicación para que permita a los usuarios, reservar, pedir y recoger fácilmente platos frescos y saludables."
+            descripcion: "Diseño de Interfaz Intuitiva, Simplificar el Proceso de Pedido, Funciones de Comentarios y Valoraciones, Gestión de Reservas de Mesas."
         },
         2: {
             title: "Rol",
@@ -33,18 +33,17 @@ export const projectsDesign = [{
     users: {
         title: "Entender al usuario",
         descripcion: [
-            "Realicé entrevistas y creé mapas de empatía para entender a los usuarios para quienes diseño, así como sus necesidades. Un grupo de usuarios primario identificado a través de la investigación fueron los adultos trabajadores que no tienen tiempo para cocinar.",
-            "Este grupo de usuarios confirmó las suposiciones iniciales sobre las personas que suelen tener poco tiempo y muchas responsabilidades, pero la investigación ",
-            "también reveló que el tiempo no era el único factor que limitaba a los usuarios a la hora de cocinar en casa. Los usuarios también tenían otros problemas, como obligaciones, intereses o desafíos que hacían que fuera difícil conseguir los comestibles para cocinar o ir a restaurantes en persona."
-        ], weakPoints: [
-            "Los adultos que trabajan están demasiado ocupados para dedicar tiempo a preparar comidas.",
-            "Las plataformas para pedir comida no están equipadas con tecnologías de asistencia.",
-            "Los menús con mucho texto en las aplicaciones suelen ser difíciles de leer y usar para pedir.",
+            "Realicé entrevistas exhaustivas y generé mapas de empatía con el objetivo de comprender en profundidad a los usuarios para quienes estoy diseñando. En el transcurso de esta investigación, se identificó un grupo primario de usuarios: adultos con empleos a tiempo completo que, lamentablemente, no disponen del tiempo necesario para cocinar en casa.",
+            "Los adultos que trabajan enfrentan una constante falta de tiempo que dificulta la preparación de comidas caseras. Además, hemos observado que las plataformas de pedidos de alimentos carecen de características de accesibilidad necesarias para atender a las necesidades de este grupo. En particular, los menús extensos y con abundante texto en las aplicaciones a menudo resultan difíciles de leer y utilizar al realizar un pedido, lo que añade otra capa de complejidad a su experiencia. Estamos comprometidos en abordar estos desafíos y diseñar una solución que simplifique y mejore la forma en que este grupo de usuarios ordena su comida.",
+            "Si bien nuestras suposiciones iniciales se vieron respaldadas por las experiencias de este grupo de usuarios, la investigación arrojó una perspicaz revelación. Descubrimos que la limitación de tiempo no era el único obstáculo que enfrentaban estos usuarios al intentar preparar sus propias comidas. Otros factore",
+            "Otros factores, como responsabilidades adicionales, intereses diversos y desafíos personales, también obstaculizaban sus esfuerzos por adquirir ingredientes frescos para cocinar en casa o visitar restaurantes físicamente."
+               ], weakPoints: [
+            ""
         ],
         person1: {
             title: "Persona",
             name: "Martha",
-            descripcion: "Martha es un adulto que no tiene mucho tiempo para prepararce la cena, necesita fácil acceso a opciones de entrega de alimentos saludables porque en varias ocaciones suele tomarce más tiempo salir del trabajo.",
+            descripcion:"Martha es una profesional ocupada y comprometida con su estilo de vida vegano. Busca una experiencia de usuario en la aplicación que le brinde comodidad, velocidad y precisión en la entrega de sus pedidos, así como notificaciones oportunas para mantenerla informada. La aplicación debe ser capaz de adaptarse a sus restricciones dietéticas y ofrecerle opciones veganas claras y personalizables para satisfacer sus necesidades alimenticias. En resumen, Martha busca una experiencia de usuario ágil y adaptable que se integre perfectamente con su ajetreada vida laboral y su estilo de vida vegano.",
             image: "../../../assets/Image/GitHub-Mark.png",
             width: 700,
             height: 400,

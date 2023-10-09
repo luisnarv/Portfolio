@@ -41,12 +41,12 @@ export class DesingProjectsComponent {
 
 
   projects= [{
-    title:"Restaurant App",
+    title:"Ambrosía Española",
     img:[
       "../../../assets/Image/Design/proyecto1/Login screen - 2.svg",
       "../../../assets/Image/Design/proyecto1/Android Small - 1.svg",
       "../../../assets/Image/Design/proyecto1/Carrito- Screen- 4.svg"],
-    descripcion:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla optio odit natus deserunt magni dolor rem enim! Voluptatibus, asperiores. Sequi recusandae veritatis pariatur dolorem nisi sint rem debitis vitae ad."
+    descripcion:'Este proyecto tiene como objetivo fundamental crear una aplicación móvil de alta calidad que refleje la esencia de "Ambrosía Española" y brinde a los usuarios una experiencia memorable y satisfactoria mientras exploran y disfrutan de la deliciosa comida española que ofrece el restaurante.'
   },
   {
     title:"Pet shop",

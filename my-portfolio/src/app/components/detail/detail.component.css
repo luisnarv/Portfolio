@@ -15,7 +15,7 @@
 
 hr{
     width: 100%;
-    margin: 50px 0;
+    margin: 10px 0;
 }
 
 .titleDetail{
@@ -26,19 +26,29 @@ hr{
     flex-direction: column;
 }
 
+.titleDetail hr{
+    margin: 0px;
+}
 
 
 .summaryDetail{
     display: flex;
+    flex-direction: column;
     align-items: center;
     text-align: justify;
-
-    margin: 10px;
-
+    width: 100vw;
+    height: 100vh;
+    background-color: #DFECF0;
+}
+.summaryDetail div{
+    padding: 100px 100px 0px 100px;
+    display: flex;
+    flex-direction: row;
 }
 
+
 .summaryDetail span{
-    margin: 10px;
+    margin: 20px;
     display: flex;
     flex-direction: column;
 }
@@ -47,17 +57,17 @@ hr{
 
 .summaryCharac{
     background-color: white;
-    width: 100vw;
-    height: 100%;
+    width: 100%;
     display: flex;
-    justify-content: center;    
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;   
 }
 
 .summaryCharac ul{
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 50vw;
 }
 
 .summaryCharac li{
@@ -74,7 +84,15 @@ hr{
 /* ------------------------------------------------------------------------------------------ */
 
 .users{
+    background: linear-gradient(90deg, rgba(255,255,255,0.8211659663865546) 0%, rgba(204,214,217,1) 50%, rgba(255,255,255,0.7035189075630253) 100%);
+     width: 100vw;
     height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.users div{
+    padding: 100px 200px 0px 200px;
+    text-align: justify;
 }
 
 .users ol{
@@ -85,6 +103,7 @@ hr{
     display: flex;
     align-items: center;
 }
+
 
 .usersPerson span{
     display: flex;
