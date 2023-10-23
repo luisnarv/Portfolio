@@ -1,16 +1,18 @@
 <div class="main-projects">
     <nav class="navbar">
-       <!-- <span></span> -->
-            <a href="/">Menu</a>
-        
+        <!-- <span></span> -->
+        <a [routerLink]="['/']">Menu</a>
+
 
         <ul class="projects-menu">
-            <li><a href="">BackEnd Projects</a></li>
-            <li><a href="">FrontEnd Projects</a></li>
-            <li>
-                <a href="/desingProjects">Desing/UX projects</a>  
-            </li>
-            <li><a href="">About</a></li>
+            <li routerLinkActive="active-link" >
+                <a [routerLink]="['/back']" >BackEnd Projects</a></li>
+            <li routerLinkActive="active-link" >
+                <a [routerLink]="['/back']" >FrontEnd Projects</a></li>
+            <li  routerLinkActive="active-link" >
+                 <a [routerLink]="['/desingProjects']" >Design/UX projects</a></li>
+            <li routerLinkActive="active-link" >
+                <a [routerLink]="['/About']" >About</a></li>
         </ul>
 
 

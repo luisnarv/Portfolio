@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { LocalDataService } from 'src/app/service/local-data.service';
+import { Router } from '@angular/router';
 //import "../../../assets/Image/Desing/proyecto2"
 
 
@@ -13,10 +14,16 @@ export class DesingProjectsComponent {
   left = 0 
   right = 1
 
-  constructor(private service:LocalDataService){}
+  constructor(private service:LocalDataService, private router:Router){}
+
+  isActive(route: number): boolean {
+    console.log(this.router.url)
+    return this.router.url.length > route;
+  }
+
 
   getID(name:string){
-    console.log("id ",name)
+    // console.log("id ",name)
     const id = this.service.setItem("project", name);
   }
 
@@ -39,13 +46,11 @@ export class DesingProjectsComponent {
     }
   }
 
-
   projects= [{
     title:"Ambrosía Española",
     img:[
-      "../../../assets/Image/Design/proyecto1/Login screen - 2.svg",
-      "../../../assets/Image/Design/proyecto1/Android Small - 1.svg",
-      "../../../assets/Image/Design/proyecto1/Carrito- Screen- 4.svg"],
+     "../../../assets/Image/Design/proyecto1/main-project1.webp",
+    ],
     descripcion:'Este proyecto tiene como objetivo fundamental crear una aplicación móvil de alta calidad que refleje la esencia de "Ambrosía Española" y brinde a los usuarios una experiencia memorable y satisfactoria mientras exploran y disfrutan de la deliciosa comida española que ofrece el restaurante.'
   },
   {

@@ -1,22 +1,21 @@
 /* ---------------Contenedor principal--------------- */
-.main-projects{
-    overflow: hidden;
-    position: relative;
+.main-projects {
     width: 100vw;
     height: 100vh;
+    
+    padding: 100px 50px ;
+    overflow-x: hidden;
 }
 
 /* ---------------Contenedor secundario--------------- */
-.projects{
+.projects {
     width: 100vw;
-    height: 100%;
-    padding: 100px;
-    overflow-y: auto;
-}
+    padding: 100px 50px;
+}   
 
 
 /* --------------------Direccional------------------- */
-.direccional{
+.direccional {
     width: 90vw;
     top: 50%;
     display: flex;
@@ -24,7 +23,7 @@
     position: absolute;
 }
 
-.direccional img{
+.direccional img {
     width: 50px;
     height: 50px;
 }
@@ -32,53 +31,68 @@
 
 
 /* --------------------Información-proyecto------------------- */
-.Projetc-info{
+.Projetc-info {
     display: flex;
-    flex-direction:row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.Projetc-info ul{
+.Projetc-info ul {
     width: 40%;
     list-style: none;
     text-align: justify;
 }
 
-.Projetc-info li{
+.Projetc-info li {
     padding: 10px;
 }
 
 
 
 /* --------------------Información-proyecto-imagenes------------------- */
-.images{
+.images {
     width: 50%;
     display: flex;
     justify-content: center;
     cursor: pointer;
-    height: 400px;
-} 
+    height: 100%;
+}
 
-.images img{
+.images span {
+    /* box-shadow: 14px 11px 29px -15px; */
+    border-radius: 5px;
+    /* height:400px; */
+
+}
+
+.images img {
+    border-radius: 5px;
     width: 100%;
-    border: solid 1px;
-    margin: 10px;
-    padding: 10px;
-    animation-duration: 3s;
-    animation-name: _ngcontent-ng-c3173972962_slidein;
+    height: 100%;
+    animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+    animation-timing-function: linear;
+    animation-duration: 2s;
+    /* animation-name: slidein;
     animation-timing-function: ease-out;
-    animation-timing-function: ease;
-    box-shadow: #2d313a 1px 1px 16px -9px;
+    animation-timing-function: ease; */
+    /* box-shadow: inset #2d313a 7px 7px 20px 3px; */
+    transition: all 1.5s ease-out;
+}
+
+.images img:hover {
+    /* box-shadow: #2d313a 1px 2px 20px -5px; */
+
 }
 
 
-@keyframes slidein {
+/* @keyframes slidein {
     from {
-      width: 50%;
+      width: 0%;
+      
     }
   
     to {
       width: 100%;
     }
-  }
+  } */

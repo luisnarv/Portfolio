@@ -7,9 +7,13 @@ import { DetailComponent } from './components/detail/detail.component';
 
 const routes: Routes = [
   {path:"", component:HomePageComponent},
+ 
   {path:"back", component:ProjetcsComponent},
-  {path:"desingProjects", component:DesingProjectsComponent},
-  {path:"detail", component:DetailComponent},
+  {path:"desingProjects", component:DesingProjectsComponent, children: [
+    { path: 'detail/:', component: DetailComponent }]},
+  // {path:"detail/:", component:DetailComponent}, 
+  {path:"**", component:HomePageComponent},//en caso de que la ruata no exista nos dirige al home
+  // { path: 'ruta-especifica', component: RutaEspecificaComponent },
 ];
 
 @NgModule({
@@ -17,3 +21,9 @@ const routes: Routes = [
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
+
+// const routes: Routes = [
+//   // Otras rutas...
+//   { path: 'ruta-especifica', component: RutaEspecificaComponent },
+//   // Otras rutas...
+// ];

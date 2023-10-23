@@ -57,25 +57,26 @@
             <ul>
                 <li>
                     <span> <img src="../../../assets/Image/back.svg" alt="server.png" width="50px"></span>
-                  <a href="/back">BackEnd developer</a>  
+                  <!-- <a href="/back">BackEnd developer</a>   -->
+                  <a [routerLink]="['/back']" >BackEnd developer</a>  
                 </li>
                 <li>
                     <span>
                         <img src="../../../assets/Image/Front.svg" alt="PantallaIcon" width="50px">
                     </span>
-                    <a href="">FrontEnd developer</a>
+                    <a [routerLink]="['/back']" >FrontEnd developer</a>
                 </li>
                 <li>
                     <span>
                         <img src="../../../assets/DesignIcon.svg" alt="DiseñoIcon" width="50px">
                     </span>
-                    <a href="/desingProjects">Design/UX</a>  
+                    <a [routerLink]="['/desingProjects']" >Design/UX</a>  
                 </li>
                 <li>
                     <span>
                         <img src="../../../assets/Image/cvicon.svg" alt="CVIcon" width="50px">
                     </span>
-                    <a href="">About</a>
+                    <a [routerLink]="['/About']" >About</a>
                 </li>
             </ul>
         </div>

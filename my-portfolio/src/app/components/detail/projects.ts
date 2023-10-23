@@ -4,30 +4,31 @@ export const projectsDesign = [{
     author: "Luis Narvaez",
 
     summaryProject: {
+        summary: [{
+            title: "Problema",
+            descripcion: "Los trabajadores ocupados y personas con Discapacidad que no tienen el tiempo o se les dificulta preparar una rica comida."
+        },
+        {
+            title: "Objetivo",
+            descripcion: "Diseño de Interfaz Intuitiva, Simplificar el Proceso de Pedido, Funciones de Comentarios y Valoraciones, Gestión de Reservas de Mesas."
+        },
+        {
+            title: "Rol",
+            descripcion: "Diseñador de UX a cargo de crear una aplicación de Restaurant Ap p desde la concepción hasta la entrega.",
+        },
+        {
+            title: "Responsabilities",
+            descripcion: "Realización de entrevistas, esquemas en papel y digitales, creación de prototipos de baja y alta fidelidad, realización de estudios de facilidad de uso, accesibilidad e iteración de diseños."
+        }
+        ],
         descripcion: [
             ' "Ambrosía Española" es un auténtico restaurante de cocina española que se enorgullece de brindar a sus clientes una experiencia culinaria española de primera calidad. Con la visión de expandir sus servicios, estamos desarrollando una aplicación que permitirá a los usuarios realizar pedidos y reservar mesas de manera eficiente, opción de entrega a domicilio y la posibilidad de recoger los pedidos en el local para una mayor comodidad.'
             , 'Nuestra extensa selección de platos, acompañada de precios altamente competitivos, garantiza una oferta gastronómica que satisface diversos gustos y presupuestos. Esta aplicación está diseñada pensando en familias, individuos y profesionales ocupados que valoran la diversidad culinaria y desean mantener un estilo de vida saludable, o simplemente aquellos que buscan una solución conveniente para sus comidas familiares. Con "Ambrosía Española", la autenticidad de la cocina española se adapta a tu ritmo de vida.',
         ],
         time: "Julio 2023 - Agosto 2023",
-        image: "../../../assets/Image/GitHub-Mark.png",
-        width: 1000,
-        height: 400,
-        0: {
-            title: "Problema",
-            descripcion: "Los trabajadores ocupados y personas con Discapacidad que no tienen el tiempo o se les dificulta preparar una rica comida."
-        },
-        1: {
-            title: "Objetivo",
-            descripcion: "Diseño de Interfaz Intuitiva, Simplificar el Proceso de Pedido, Funciones de Comentarios y Valoraciones, Gestión de Reservas de Mesas."
-        },
-        2: {
-            title: "Rol",
-            descripcion: "Diseñador de UX a cargo de crear una aplicación de Restaurant Ap p desde la concepción hasta la entrega.",
-        },
-        3: {
-            title: "Responsabilities",
-            descripcion: "Realización de entrevistas, esquemas en papel y digitales, creación de prototipos de baja y alta fidelidad, realización de estudios de facilidad de uso, accesibilidad e iteración de diseños."
-        },
+        image: "../../../assets/Image/Design/proyecto1/home-screen.webp",
+        width: 300,
+        height: 300,
     },
 
     users: {
@@ -37,15 +38,15 @@ export const projectsDesign = [{
             "Los adultos que trabajan enfrentan una constante falta de tiempo que dificulta la preparación de comidas caseras. Además, hemos observado que las plataformas de pedidos de alimentos carecen de características de accesibilidad necesarias para atender a las necesidades de este grupo. En particular, los menús extensos y con abundante texto en las aplicaciones a menudo resultan difíciles de leer y utilizar al realizar un pedido, lo que añade otra capa de complejidad a su experiencia. Estamos comprometidos en abordar estos desafíos y diseñar una solución que simplifique y mejore la forma en que este grupo de usuarios ordena su comida.",
             "Si bien nuestras suposiciones iniciales se vieron respaldadas por las experiencias de este grupo de usuarios, la investigación arrojó una perspicaz revelación. Descubrimos que la limitación de tiempo no era el único obstáculo que enfrentaban estos usuarios al intentar preparar sus propias comidas. Otros factore",
             "Otros factores, como responsabilidades adicionales, intereses diversos y desafíos personales, también obstaculizaban sus esfuerzos por adquirir ingredientes frescos para cocinar en casa o visitar restaurantes físicamente."
-               ], weakPoints: [
+        ], weakPoints: [
             ""
         ],
         person1: {
             title: "Persona",
             name: "Martha",
-            descripcion:"Martha es una profesional ocupada y comprometida con su estilo de vida vegano. Busca una experiencia de usuario en la aplicación que le brinde comodidad, velocidad y precisión en la entrega de sus pedidos, así como notificaciones oportunas para mantenerla informada. La aplicación debe ser capaz de adaptarse a sus restricciones dietéticas y ofrecerle opciones veganas claras y personalizables para satisfacer sus necesidades alimenticias. En resumen, Martha busca una experiencia de usuario ágil y adaptable que se integre perfectamente con su ajetreada vida laboral y su estilo de vida vegano.",
-            image: "../../../assets/Image/GitHub-Mark.png",
-            width: 700,
+            descripcion: "Martha es una profesional ocupada y comprometida con su estilo de vida vegano. Busca una experiencia de usuario en la aplicación que le brinde comodidad, velocidad y precisión en la entrega de sus pedidos, así como notificaciones oportunas para mantenerla informada. La aplicación debe ser capaz de adaptarse a sus restricciones dietéticas y ofrecerle opciones veganas claras y personalizables para satisfacer sus necesidades alimenticias. En resumen, Martha busca una experiencia de usuario ágil y adaptable que se integre perfectamente con su ajetreada vida laboral y su estilo de vida vegano.",
+            image: "../../../assets/Image/Design/proyecto1/Persona-martha.webp",
+            width: 200,
             height: 400,
         }
     },
@@ -54,35 +55,37 @@ export const projectsDesign = [{
         0: {
             title: "Esquemas de página en papel",
             descripcion: ["Tomarse el tiempo para elaborar en papel iteraciones de cada pantalla de la aplicación garantizó que los elementos que llegaron a convertirse en esquemas de página digitales fueran los correctos para abordar las dificultades del usuario. Para la pantalla de inicio, prioricé un proceso de pedidos rápido y simple para evitar que los usuarios perdieran tiempo. "],
-            image: "../../../assets/Image/GitHub-Mark.png",
-            width: 400,
-            height: 400,
+            image: "../../../assets/Image/Design/proyecto1/essquemas.webp",
+            width: 494,
+            height: 671,
         },
         1: {
             title: "Esquemas de página digitales",
             descripcion: ["A medida que la fase inicial del diseño continuaba, me aseguré de realizar los diseños de las pantallas según los comentarios y los resultados de la investigación de usuarios."],
-            image: "../../../assets/Image/GitHub-Mark.png",
+            image: "../../../assets/Image/Design/proyecto1/home-screen-digital.webp",
             width: 400,
-            height: 400,
+            height: 600,
         },
         2: {
             title: "prototipo de baja fidelidad",
             descripcion: ["Usando el conjunto completo de esquemas de página digitales, creé un prototipo de baja fidelidad. El flujo de usuario principal que conecté fue el de construir y pedir una pizza, por lo que el prototipo podría usarse en un estudio de facilidad de uso."],
-            image: "../../../assets/Image/GitHub-Mark.png",
-            width: 400,
-            height: 400,
+            image: "../../../assets/Image/Design/proyecto1/proto-baja.webp",
+            // image: "../../../assets/Image/Design/proyecto1/prototipo-bajafidelidad.png",
+            // width: 600,
+            width: 900,
+            height: 626,
             link: "https://www.figma.com/proto/mU4Z696yjsdTIfKnV9xQJT/Restaurant-prototipo-1?type=design&node-id=1-2&t=jry1h3xhBzE2C8lt-1&scaling=scale-down&page-id=0%3A1&starting-point-node-id=1%3A2"
         },
         3: {
             title: "Estudio de facilidad de uso: hallazgos ",
-            descripcion: ["Realicé dos rondas de estudios de facilidad de uso. Los hallazgos del primer estudio ayudaron a guiar los diseños para convertirlos de esquemas de página en maquetas. El segundo estudio utilizó un prototipo de alta fidelidad y reveló qué aspectos de las maquetas necesitaban refinarse."],
+            descripcion: ["Realicé dos rondas de estudios de facilidad de uso.", "Los hallazgos del primer estudio ayudaron a guiar los diseños para convertirlos de esquemas de página en maquetas. El segundo estudio utilizó un prototipo de alta fidelidad y reveló qué aspectos de las maquetas necesitaban refinarse."],
 
             width: 400,
             height: 400,
         },
         4: {
             rond1: {
-                title: "Hallazgos",
+                title: "Hallazgos Ronda 1",
                 descripcion: [
                     "Los usuarios quieren ordenar rápidamente.",
                     "La función para seguir el pedido.",
@@ -90,7 +93,7 @@ export const projectsDesign = [{
                 ],
             },
             rond2: {
-                title: "Hallazgos",
+                title: "Hallazgos Ronda 2",
                 descripcion: [
                     "Los usuarios quieren una opción que permita ver la información de los alimentos.",
                     " Los usuarios quieren más opciones de personalización como cantidad."
@@ -105,26 +108,25 @@ export const projectsDesign = [{
             title: "Maquetas",
             0: {
                 descripcion: "Los primeros diseños permitían cierto nivel de personalización, pero, después de los estudios de facilidad de uso, agregué otras funciones como con que ingredientes fue prepado. También agrego comentarios de los usuarios.",
-                image1: "../../../assets/Image/GitHub-Mark.png",
-                image2: "../../../assets/Image/GitHub-Mark.png",
-                width: 400,
-                height: 400,
+                image1: "../../../assets/Image/Design/proyecto1/paella.webp",
+                width: 800,
+                height: 546,
             },
             1: {
-                descripcion: "El segundo estudio de usabilidad reveló frustración al no encontrar la funcion de mapa y el historial de pedidos. Para agilizar este flujo, agrege estas funicones a la pantalla principal. ",
-                image1: "../../../assets/Image/GitHub-Mark.png",
-                image2: "../../../assets/Image/GitHub-Mark.png",
-                width: 400,
-                height: 400,
+                descripcion: "",
+                image1: "",
+                width: 0,
+                height: 0,
             },
         },
 
         hiFiPrototype: {
             title: "prototipo de alta fidelidad",
             descripcion: "El prototipo final de alta fidelidad presentó flujos de usuario más limpios para crear una pizza y pagar. También satisfizo las necesidades de los usuarios de contar con una opción de recogida o entrega, así como de una mayor personalización.",
-            image: "../../../assets/Image/GitHub-Mark.png",
-            width: 400,
-            height: 400,
+            image: "../../../assets/Image/Design/proyecto1/proto-alta.webp",
+            //image: "../../../assets/Image/Design/proyecto1/prototipo de alta fidelidad.png",
+            width: 900,
+            height: 626,
             link: "https://www.figma.com/proto/pVf0X97OSvg6zZJDb4wOW5/Restaurant-prototipo-2?type=design&node-id=224-220&t=00gmvFFwXsc69xCo-1&scaling=scale-down&page-id=224%3A54&starting-point-node-id=224%3A220",
         },
 
@@ -162,6 +164,24 @@ export const projectsDesign = [{
     author: "Luis Narvaez",
 
     summaryProject: {
+        summary :[
+            {
+                title: "Problema",
+                descripcion: "Los Sitios web de adopción para mascotas tienen diseños desordenados, procesos de pagos e información confusos."
+            },
+         {
+                title: "Objetivo",
+                descripcion: "Diseñar un sitio web que facilite el proceso de adopcón para los usuarios, que permita una navegación clara y procesos de pago rápido."
+            },
+            {
+                title: "Rol",
+                descripcion: "Diseñador de UX, líder de diseño del sitio web de Pet shop."
+            },
+         {
+                title: "Responsabilities",
+                descripcion: "Realizar entrevistas, esquemas en papel y digitales, crear prototipos de baja y alta fidelidad, realizar estudios de facilidad de uso, tener en cuenta la accesibilidad, repetir los diseños y el diseño adaptable."
+            },
+        ],
         descripcion: [
             "Pet shop es una página web de un centro de adopción accesible para usuarios de 19 a 65 años, el objetivo de Pet shop es permitir a los usuarios iniciar el proceso de adopción desde cualquier lugar, permite comprar de manera fácil y rapida"
         ],
@@ -169,22 +189,6 @@ export const projectsDesign = [{
         image: "../../../assets/Image/Design/proyecto2/Web 1920 – 20.webp",
         width: 700,
         height: 400,
-        0: {
-            title: "Problema",
-            descripcion: "Los Sitios web de adopción para mascotas tienen diseños desordenados, procesos de pagos e información confusos."
-        },
-        1: {
-            title: "Objetivo",
-            descripcion: "Diseñar un sitio web que facilite el proceso de adopcón para los usuarios, que permita una navegación clara y procesos de pago rápido."
-        },
-        2: {
-            title: "Rol",
-            descripcion: "Diseñador de UX, líder de diseño del sitio web de Pet shop."
-        },
-        3: {
-            title: "Responsabilities",
-            descripcion: "Realizar entrevistas, esquemas en papel y digitales, crear prototipos de baja y alta fidelidad, realizar estudios de facilidad de uso, tener en cuenta la accesibilidad, repetir los diseños y el diseño adaptable."
-        },
     },
 
     users: {
@@ -317,6 +321,24 @@ export const projectsDesign = [{
     author: "Luis Narvaez",
 
     summaryProject: {
+        summary : [
+             {
+                title: "Problema",
+                descripcion: "Los veteranos de guerra a menudo enfrentan desafíos particulares al buscar empleo como civiles debido a las experiencias y circunstancias únicas asociadas con su servicio militar."
+            },
+             {
+                title: "Objetivo",
+                descripcion: "Diseñar una aplicación móvil que se a una herramienta valiosa para la búsqueda de empleo con una navegación clara y un diseño agradable."
+            },
+             {
+                title: "Rol",
+                descripcion: "Diseñador/UX"
+            },
+            {
+                title: "Responsabilities",
+                descripcion: "Realizar entrevistas, esquemas en papel y digitales, crear prototipos de baja y alta fidelidad, realizar estudios de facilidad de uso, tener en cuenta la accesibilidad, repetir los diseños y el diseño adaptable."
+            },
+        ],
         descripcion: [
             "Veteran for job es una aplicación móvil, con múltiples formas de acceso para los usuarios a través de un móvil, web y un diseño responsive, que proporciona asesoramiento y recursos para ayudar a los veteranos a postularse para trabajos adecuados a  sus habilidades y experiencias."
         ],
@@ -324,22 +346,7 @@ export const projectsDesign = [{
         image: "../../../assets/Image/Design/proyecto3/TV - 4.webp",
         width: 700,
         height: 400,
-        0: {
-            title: "Problema",
-            descripcion: "Los veteranos de guerra a menudo enfrentan desafíos particulares al buscar empleo como civiles debido a las experiencias y circunstancias únicas asociadas con su servicio militar."
-        },
-        1: {
-            title: "Objetivo",
-            descripcion: "Diseñar una aplicación móvil que se a una herramienta valiosa para la búsqueda de empleo con una navegación clara y un diseño agradable."
-        },
-        2: {
-            title: "Rol",
-            descripcion: "Diseñador/UX"
-        },
-        3: {
-            title: "Responsabilities",
-            descripcion: "Realizar entrevistas, esquemas en papel y digitales, crear prototipos de baja y alta fidelidad, realizar estudios de facilidad de uso, tener en cuenta la accesibilidad, repetir los diseños y el diseño adaptable."
-        },
+       
     },
 
     users: {
@@ -438,7 +445,7 @@ export const projectsDesign = [{
                 "Compatibilidad con lectores de pantalla.",
                 "Filtros de búsqueda.",
                 "Agregue encabezados de textos con distintos tamaños y cambiando un poco la tonalidad de color  para lograr una jerarquía visual clara.",
-                
+
             ]
         },
     },
@@ -451,7 +458,7 @@ export const projectsDesign = [{
 
         nextSteps: [
             "Realizar pruebas de facilidad de uso de seguimiento en el nuevo diseño del sitio web.",
-            "Realizar otra ronda de estudios de usabilidad para validar si los puntos débiles experimentados por los usuarios se han abordado de manera efectiva.", 
+            "Realizar otra ronda de estudios de usabilidad para validar si los puntos débiles experimentados por los usuarios se han abordado de manera efectiva.",
             "Identificar nuevas necesidades y funciones."
         ]
     },

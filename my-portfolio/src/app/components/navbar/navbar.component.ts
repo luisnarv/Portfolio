@@ -19,6 +19,11 @@ export class NavbarComponent {
       }
     });
   }
+  
+  // isActive(route: string): boolean {
+  //   console.log( this.router.url === route)
+  //   return this.router.url === route;
+  // }
  
 
 }
