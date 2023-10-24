@@ -36,7 +36,7 @@ export class DetailComponent {
           descripcion: ""
         }],
 
-        descripcion: [""],
+      descripcion: [""],
       time: "",
       image: "",
       width: 0,
@@ -50,7 +50,7 @@ export class DetailComponent {
       person1: {
         title: "",
         name: "",
-        descripcion: "",
+        descripcion:[ ""],
         image: "",
         width: 0,
         height: 0,
@@ -133,7 +133,10 @@ export class DetailComponent {
         descripcion: [""]
       },
     },
-
+    stickerSheets: {
+      title: "",
+      img: [""]
+    },
     next: {
       conclusions: [""],
 

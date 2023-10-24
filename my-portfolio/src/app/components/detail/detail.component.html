@@ -19,8 +19,7 @@
                 <strong>{{projects.summaryProject.time}}</strong>
                 <hr>
             </span>
-            <img [src]="projects.summaryProject.image" alt="image.png"
-               [width]="projects.summaryProject.width">
+            <img [src]="projects.summaryProject.image" alt="image.png" [width]="projects.summaryProject.width">
         </div>
     </section>
 
@@ -41,10 +40,10 @@
         <div>
             <h2>{{this.projects.users.title}}</h2>
             <span>
-                <ng-container  *ngFor="let resumen of this.projects.users.descripcion">
+                <ng-container *ngFor="let resumen of this.projects.users.descripcion">
                     <p>{{resumen}}</p>
                     <br>
-                </ng-container >
+                </ng-container>
             </span>
 
             <ul *ngIf="this.projects.users.weakPoints[0].length > 0">
@@ -60,14 +59,16 @@
         <span>
             <h3>{{this.projects.users.person1.title}} "{{this.projects.users.person1.name}}"</h3>
             <hr>
-            
-            <p>{{this.projects.users.person1.descripcion}}</p>
+            <ng-container *ngFor="let person of this.projects.users.person1.descripcion">
+            <p>{{person}}</p>
+            <br>
+            </ng-container>
         </span>
         <img [src]="this.projects.users.person1.image" alt="image.png" width={{this.projects.users.person1.width}}>
 
     </section>
 
-    <br> 
+    <br>
 
     <section class="below schemasScreen fondo medidas">
         <span>
@@ -110,7 +111,7 @@
             height={{this.projects.design[2].height}}>
 
     </section>
-<br>
+    <br>
 
     <section class="schemasScreen medidas" *ngIf="this.projects.design[3].descripcion[0].length > 1">
         <span>
@@ -121,7 +122,7 @@
             </span>
         </span>
     </section>
-<br>
+    <br>
     <section class="findings medidas">
 
         <p>{{this.projects.design[4].rond1.title}}</p>
@@ -140,9 +141,9 @@
     </section>
 
 
-   <br>
+    <br>
 
-    <section class="usersMockups fondo medidas" >
+    <section class="usersMockups fondo medidas">
         <h2>{{this.projects.improveDesign.maquetas.title}}</h2>
         <div>
             <p>{{this.projects.improveDesign.maquetas[0].descripcion}}</p>
@@ -161,7 +162,7 @@
             </span>
         </div>
     </section>
-<br>
+    <br>
     <section class="below schemasScreen fondo medidas">
         <span>
             <h2>{{this.projects.improveDesign.hiFiPrototype.title}}</h2>
@@ -170,11 +171,11 @@
             <a href="{{this.projects.improveDesign.hiFiPrototype.link}}">Ver Prototipo</a>
 
         </span>
-     
+
         <img [src]="this.projects.improveDesign.hiFiPrototype.image" alt="image.png"
             width={{this.projects.improveDesign.hiFiPrototype.width}}
             height={{this.projects.improveDesign.hiFiPrototype.height}}>
-    
+
 
     </section>
     <br>
@@ -188,9 +189,14 @@
     </section>
 
     <hr>
-<br>
+    <br>
 
+    <section class="stickerSheets medidas">
+        <h2>{{projects.stickerSheets.title}}</h2>
+        <ng-container *ngFor="let sticker of projects.stickerSheets.img">
+            <img [src]=[sticker] alt="stickerSheets.webp"></ng-container>
 
+    </section>
     <section class="conclusions medidas ">
         <ul>
             <li *ngFor="let resumen of projects.next.conclusions">
@@ -200,7 +206,7 @@
     </section>
 
     <hr>
-<br>
+    <br>
     <section class="next medidas">
         <h3>Siguientes pasos</h3>
         <ol>

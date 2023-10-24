@@ -44,7 +44,8 @@ export const projectsDesign = [{
         person1: {
             title: "Persona",
             name: "Martha",
-            descripcion: "Martha es una profesional ocupada y comprometida con su estilo de vida vegano. Busca una experiencia de usuario en la aplicación que le brinde comodidad, velocidad y precisión en la entrega de sus pedidos, así como notificaciones oportunas para mantenerla informada. La aplicación debe ser capaz de adaptarse a sus restricciones dietéticas y ofrecerle opciones veganas claras y personalizables para satisfacer sus necesidades alimenticias. En resumen, Martha busca una experiencia de usuario ágil y adaptable que se integre perfectamente con su ajetreada vida laboral y su estilo de vida vegano.",
+            descripcion:[ "Martha es una profesional ocupada y comprometida con su estilo de vida vegano. Busca una experiencia de usuario en la aplicación que le brinde comodidad, velocidad y precisión en la entrega de sus pedidos, así como notificaciones oportunas para mantenerla informada. La aplicación debe ser capaz de adaptarse a sus restricciones dietéticas y ofrecerle opciones veganas claras y personalizables para satisfacer sus necesidades alimenticias.",
+            "En resumen, Martha busca una experiencia de usuario ágil y adaptable que se integre perfectamente con su ajetreada vida laboral y su estilo de vida vegano."],
             image: "../../../assets/Image/Design/proyecto1/Persona-martha.webp",
             width: 200,
             height: 400,
@@ -68,7 +69,8 @@ export const projectsDesign = [{
         },
         2: {
             title: "prototipo de baja fidelidad",
-            descripcion: ["Usando el conjunto completo de esquemas de página digitales, creé un prototipo de baja fidelidad. El flujo de usuario principal que conecté fue el de construir y pedir una pizza, por lo que el prototipo podría usarse en un estudio de facilidad de uso."],
+            descripcion:[
+                "Invertir tiempo en la creación de iteraciones para cada pantalla de la aplicación fue esencial para garantizar que los elementos finales, que se transformaron en los diseños digitales de las páginas, fueran los adecuados para abordar las necesidades del usuario. En el caso de la pantalla de inicio, mi principal enfoque se centró en desarrollar un proceso de pedido rápido y sencillo, con el propósito de evitar que los usuarios perdieran tiempo innecesario."],
             image: "../../../assets/Image/Design/proyecto1/proto-baja.webp",
             // image: "../../../assets/Image/Design/proyecto1/prototipo-bajafidelidad.png",
             // width: 600,
@@ -107,7 +109,7 @@ export const projectsDesign = [{
         maquetas: {
             title: "Maquetas",
             0: {
-                descripcion: "Los primeros diseños permitían cierto nivel de personalización, pero, después de los estudios de facilidad de uso, agregué otras funciones como con que ingredientes fue prepado. También agrego comentarios de los usuarios.",
+                descripcion:"En los diseños iniciales, se ofrecía un cierto nivel de personalización; sin embargo, tras realizar estudios de facilidad de uso, se implementaron nuevas funciones, como la posibilidad de verificar los ingredientes utilizados en la preparación. Además, se incorporaron las opiniones y comentarios de los usuarios.",
                 image1: "../../../assets/Image/Design/proyecto1/paella.webp",
                 width: 800,
                 height: 546,
@@ -122,12 +124,12 @@ export const projectsDesign = [{
 
         hiFiPrototype: {
             title: "prototipo de alta fidelidad",
-            descripcion: "El prototipo final de alta fidelidad presentó flujos de usuario más limpios para crear una pizza y pagar. También satisfizo las necesidades de los usuarios de contar con una opción de recogida o entrega, así como de una mayor personalización.",
+            descripcion: "El prototipo final de alta fidelidad se caracterizó por flujos de usuario más simplificados y cumplió satisfactoriamente con las demandas de los usuarios, ofreciendo opciones tanto de recogida como de entrega, además de una mayor capacidad de personalización.",
             image: "../../../assets/Image/Design/proyecto1/proto-alta.webp",
             //image: "../../../assets/Image/Design/proyecto1/prototipo de alta fidelidad.png",
             width: 900,
             height: 626,
-            link: "https://www.figma.com/proto/pVf0X97OSvg6zZJDb4wOW5/Restaurant-prototipo-2?type=design&node-id=224-220&t=00gmvFFwXsc69xCo-1&scaling=scale-down&page-id=224%3A54&starting-point-node-id=224%3A220",
+            link: "https://www.figma.com/proto/pVf0X97OSvg6zZJDb4wOW5/Restaurant-prototipo-2?type=design&node-id=359-244&t=weHYs8UWbgyQzXUJ-1&scaling=scale-down&page-id=359%3A133&starting-point-node-id=359%3A244&show-proto-sidebar=1&mode=design",
         },
 
         accesibility: {
@@ -140,9 +142,16 @@ export const projectsDesign = [{
         },
     },
 
+    stickerSheets: {
+        title: "Hoja de pegatinas",
+        img: ["../../../assets/Image/Design/proyecto1/TV - 3.webp",
+            "../../../assets/Image/Design/proyecto1/TV - 4.webp",
+        ]
+    },
+
     next: {
         conclusions: [
-            "La aplicación hace que los usuarios sientan que Restaurant Ap p realmente piensa en cómo satisfacer sus necesidades.",
+            'La aplicación hace que los usuarios sientan que "Ambrosía Española" realmente piensa en cómo satisfacer sus necesidades.',
             "Mientras diseñaba la aplicación, aprendí que las primeras ideas para la aplicación son solo el comienzo del proceso. Los estudios de facilidad de uso y el feedback de los compañeros influyeron en cada iteración de los diseños de la aplicación. ",
         ],
 
@@ -153,7 +162,7 @@ export const projectsDesign = [{
     },
 
     thanks: {
-        descripcion: "¡Gracias por tomarte el tiempo de revisar mi trabajo con la aplicación de Restaurant Ap p ! Si quieres ver más de mi trabajo o comunicarte conmigo, esta es mi información de contacto.",
+        descripcion: '¡Gracias por tomarte el tiempo de revisar mi trabajo con la aplicación de "Ambrosía Española" ! Si quieres ver más de mi trabajo o comunicarte conmigo, esta es mi información de contacto.',
         email: "luiskendornarvaez@gmail.com",
     },
 
@@ -164,12 +173,12 @@ export const projectsDesign = [{
     author: "Luis Narvaez",
 
     summaryProject: {
-        summary :[
+        summary: [
             {
                 title: "Problema",
                 descripcion: "Los Sitios web de adopción para mascotas tienen diseños desordenados, procesos de pagos e información confusos."
             },
-         {
+            {
                 title: "Objetivo",
                 descripcion: "Diseñar un sitio web que facilite el proceso de adopcón para los usuarios, que permita una navegación clara y procesos de pago rápido."
             },
@@ -177,7 +186,7 @@ export const projectsDesign = [{
                 title: "Rol",
                 descripcion: "Diseñador de UX, líder de diseño del sitio web de Pet shop."
             },
-         {
+            {
                 title: "Responsabilities",
                 descripcion: "Realizar entrevistas, esquemas en papel y digitales, crear prototipos de baja y alta fidelidad, realizar estudios de facilidad de uso, tener en cuenta la accesibilidad, repetir los diseños y el diseño adaptable."
             },
@@ -207,7 +216,7 @@ export const projectsDesign = [{
         person1: {
             title: "Persona",
             name: "Roberto",
-            descripcion: "Roberto es un adulto que quiere adoptar una mascota, necesita un sitio web que le permita muestre mascotas que sea compatible con el, le brinde la información necesaria del proceso de adopción y que permita iniciar el proceso desde cualquier lugar, por que quiere que el proceso de adopción sea agradable y rápido",
+            descripcion:[ "Roberto es un adulto que quiere adoptar una mascota, necesita un sitio web que le permita muestre mascotas que sea compatible con el, le brinde la información necesaria del proceso de adopción y que permita iniciar el proceso desde cualquier lugar, por que quiere que el proceso de adopción sea agradable y rápido"],
             image: "../../../assets/Image/Design/proyecto2/persona.webp",
             width: 400,
             height: 400,
@@ -297,6 +306,13 @@ export const projectsDesign = [{
         },
     },
 
+    stickerSheets: {
+        title: "Hoja de pegatinas",
+        img: [
+            "../../../assets/Image/Design/proyecto1/TV - 4.webp",
+            "../../../assets/Image/Design/proyecto1/TV - 3.webp",
+        ]
+    },
     next: {
         conclusions: [
             "Nuestros usuarios afirmaron que el diseño contaba con una navegación fácil, con texto claro e imágenes atractivas.",
@@ -321,16 +337,16 @@ export const projectsDesign = [{
     author: "Luis Narvaez",
 
     summaryProject: {
-        summary : [
-             {
+        summary: [
+            {
                 title: "Problema",
                 descripcion: "Los veteranos de guerra a menudo enfrentan desafíos particulares al buscar empleo como civiles debido a las experiencias y circunstancias únicas asociadas con su servicio militar."
             },
-             {
+            {
                 title: "Objetivo",
                 descripcion: "Diseñar una aplicación móvil que se a una herramienta valiosa para la búsqueda de empleo con una navegación clara y un diseño agradable."
             },
-             {
+            {
                 title: "Rol",
                 descripcion: "Diseñador/UX"
             },
@@ -346,7 +362,7 @@ export const projectsDesign = [{
         image: "../../../assets/Image/Design/proyecto3/TV - 4.webp",
         width: 700,
         height: 400,
-       
+
     },
 
     users: {
@@ -360,7 +376,7 @@ export const projectsDesign = [{
         person1: {
             title: "Persona",
             name: "María Sánchez",
-            descripcion: "María es una veterana retirada, que necesita incorporarse a la vida laboral civil, porque quiere continuar ayudando a las personas.",
+            descripcion: ["María es una veterana retirada, que necesita incorporarse a la vida laboral civil, porque quiere continuar ayudando a las personas."],
             image: "../../../assets/Image/Design/proyecto3/martha.webp",
             width: 400,
             height: 400,
@@ -449,7 +465,13 @@ export const projectsDesign = [{
             ]
         },
     },
-
+    stickerSheets: {
+        title: "Hoja de pegatinas",
+        img: [
+            "../../../assets/Image/Design/proyecto1/TV - 4.webp",
+            "../../../assets/Image/Design/proyecto1/TV - 3.webp",
+        ]
+    },
     next: {
         conclusions: [
             "Veterans for Jobs ofrece un diseño simple y fácil Nuestros usuarios afirmaron que el diseño contaba con una navegación fácil, con texto claro.",
