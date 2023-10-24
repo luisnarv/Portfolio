@@ -2,14 +2,14 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HomePageComponent } from './components/home-page/home-page.component';
 import { ProjetcsComponent } from './components/projetcs/projetcs.component';
-import { DesingProjectsComponent } from './components/desing-projects/desing-projects.component';
 import { DetailComponent } from './components/detail/detail.component';
+import { DesignProjectsComponent } from './design-projects/design-projects.component';
 
 const routes: Routes = [
   {path:"", component:HomePageComponent},
  
   {path:"back", component:ProjetcsComponent},
-  {path:"desingProjects", component:DesingProjectsComponent, children: [
+  {path:"designProjects", component:DesignProjectsComponent, children: [
     { path: 'detail/:', component: DetailComponent }]},
   // {path:"detail/:", component:DetailComponent}, 
   {path:"**", component:HomePageComponent},//en caso de que la ruata no exista nos dirige al home

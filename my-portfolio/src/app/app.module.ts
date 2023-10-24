@@ -6,8 +6,8 @@ import { AppComponent } from './app.component';
 import { HomePageComponent } from './components/home-page/home-page.component';
 import { ProjetcsComponent } from './components/projetcs/projetcs.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
-import { DesingProjectsComponent } from './components/desing-projects/desing-projects.component';
 import { DetailComponent } from './components/detail/detail.component';
+import { DesignProjectsComponent } from './design-projects/design-projects.component';
 
 
 @NgModule({
@@ -16,8 +16,8 @@ import { DetailComponent } from './components/detail/detail.component';
     HomePageComponent,
     ProjetcsComponent,
     NavbarComponent,
-    DesingProjectsComponent,
-    DetailComponent
+    DetailComponent,
+    DesignProjectsComponent
   ],
   imports: [
     BrowserModule,

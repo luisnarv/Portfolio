@@ -1,15 +1,13 @@
 import { Component } from '@angular/core';
 import { LocalDataService } from 'src/app/service/local-data.service';
 import { Router } from '@angular/router';
-//import "../../../assets/Image/Desing/proyecto2"
-
 
 @Component({
-  selector: 'app-desing-projects',
-  templateUrl: './desing-projects.component.html',
-  styleUrls: ['./desing-projects.component.css']
+  selector: 'app-design-projects',
+  templateUrl: './design-projects.component.html',
+  styleUrls: ['./design-projects.component.css']
 })
-export class DesingProjectsComponent {
+export class DesignProjectsComponent {
 
   left = 0 
   right = 1
@@ -20,7 +18,6 @@ export class DesingProjectsComponent {
     console.log(this.router.url)
     return this.router.url.length > route;
   }
-
 
   getID(name:string){
     // console.log("id ",name)
@@ -45,6 +42,7 @@ export class DesingProjectsComponent {
       this.left = this.projects.length - 1;
     }
   }
+
 
   projects= [{
     title:"Ambrosía Española",
@@ -74,5 +72,6 @@ export class DesingProjectsComponent {
   descripcion:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla optio odit natus deserunt magni dolor rem enim! Voluptatibus, asperiores. Sequi recusandae veritatis pariatur dolorem nisi sint rem debitis vitae ad."
   },
 ] 
+
 
 }
