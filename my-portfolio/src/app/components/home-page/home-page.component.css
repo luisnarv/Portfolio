@@ -90,11 +90,11 @@ color: white;
 
 
 .containerInfo-info{
-    margin-top: 10%;
+    margin-top: 15%;
 }
 
 .containerInfo{
-    width: 100%;
+    width: 100vw;
     display: flex;
     height: 50%;
     /* background-color: red; */
@@ -106,16 +106,18 @@ color: white;
 }
 
 .left-list{
-    
-    padding-left: 100px;
     width: 50%;
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 .left-listPhoto {
     border-radius: 5px;
-    box-shadow: black 1px 1px 9px -6px;
+    /* box-shadow: inherit black 1px 1px 9px -6px; */
+    width: 500px;
+    height: 167px;
+    filter: drop-shadow(rgba(0, 0, 0, 0.348) 4px 11px 0px);
 }
 
 .left-list div{
@@ -134,8 +136,11 @@ color: white;
 
 .right-list{
     width: 50%;
-    height: 50%;
-    margin: 100px 0px 0px 0px;
+    height: auto;
+    margin: 0px 10px;
+    display: flex;
+    justify-content: center;
+    /* margin: 100px 0px 0px 0px; */
 
 }
 

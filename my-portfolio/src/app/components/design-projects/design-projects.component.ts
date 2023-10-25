@@ -15,14 +15,13 @@ export class DesignProjectsComponent {
   constructor(private service:LocalDataService, private router:Router){}
 
   isActive(route: number): boolean {
-    console.log(this.router.url)
+    // console.log(this.router.url)
     return this.router.url.length > route;
   }
-
-  getID(name:string){
-    // console.log("id ",name)
-    const id = this.service.setItem("project", name);
-  }
+  // getID(name:string){
+  //   // console.log("id ",name)
+  //    this.service.setItem("project", name);
+  // }
 
   changueCardRight(){
     this.right = this.right +1 ;
