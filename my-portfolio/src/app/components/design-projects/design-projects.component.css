@@ -4,6 +4,7 @@
     height: 100vh;
     
     padding: 100px 50px ;
+    overflow: hidden;
     /* overflow-x: hidden; */
 }
 

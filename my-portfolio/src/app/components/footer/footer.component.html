@@ -1,32 +1,26 @@
 <div class="contenedor">
-    <div class="formulario">
-        <h1>Contacto</h1>
-        <br>
-        <form class="form" action="https://formsubmit.co/luiskendornarvaez@gmail.com" method="post" >
-            <label for="nombre">Nombre</label>
-            <input  type="text" id="nombre" name="nombre" required placeholder="Nombre completo" ><br>
+    <section class="formulario">
+    <h1>Contacto</h1>
+    <br>
+    <form [formGroup]="form" class="form" action="https://formsubmit.co/luiskendornarvaez@gmail.com" method="POST">
+        <span class="flex">
+            <input formControlName="name" type="text" id="name" name="name" required placeholder="Nombre completo">
+            <input formControlName="email" type="email" name="email" required placeholder="ejemplo@gmail.com">
+        </span>
+        <textarea formControlName="message" name="message" rows="4" required
+            placeholder="Ingresa tu mensaje"></textarea>
+        <button *ngIf="form.invalid === false"  type="submit" >Enviar</button>
+    </form>
 
-            <label for="correo">Correo Electrónico</label>
-            <input type="email" id="correo" name="email" required placeholder="ejemplo@gmail.com"><br>
-
-            <label for="asunto">Asunto</label>
-            <input type="text" id="asunto" name="asunto" required placeholder="Pongamonos en Contacto" ><br>
-
-            <label for="contenido">Contenido</label>
-            <textarea id="contenido" name="contenido" rows="4" required placeholder="Ingresa tu mensaje" ></textarea><br>
-
-            <!-- <input type="submit" value="Enviar"> -->
-            <button type="submit" value="Enviar" >Enviar</button>
-        </form>
-    </div>
-
+</section>
+    <!-- {{form.value | json}} -->
 
     <div class="footer">
         <p>Ejemplo de elementos de un footer:</p>
         <ul>
-            <li><a href="#">    <img src="../../../assets//Image/GithubIcon.png" alt="GithubIcon" width="50px"></a></li>
+            <li><a href="#"> <img src="../../../assets//Image/GithubIcon.png" alt="GithubIcon" width="50px"></a></li>
             <li><a href="#"> <img src="../../../assets/Image/LinkIdinICon.png" alt="LinkIdinICon" width="50px"></a></li>
             <li><a href="#">Enlace 3</a></li>
-        </ul>
+        </ul>text">
     </div>
 </div>
