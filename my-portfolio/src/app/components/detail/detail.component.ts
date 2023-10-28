@@ -1,162 +1,157 @@
 import { Component, Input } from '@angular/core';
 import { LocalDataService } from 'src/app/service/local-data.service';
 import { projectsDesign } from './projects';
+import { RouterModule, Routes } from '@angular/router';
 //import "../../../assets/Image/GitHub-Mark.png"
 
 @Component({
   selector: 'app-detail',
   templateUrl: './detail.component.html',
-  styleUrls: ['./detail.component.css']
+  styleUrls: ['./detail.component.css'],
 })
 export class DetailComponent {
-
-
-  constructor(private service: LocalDataService) { }
+  constructor(private service: LocalDataService) {}
 
   projects = {
-    title: "",
-    author: "",
+    title: '',
+    author: '',
 
     summaryProject: {
       summary: [
         {
-          title: "",
-          descripcion: ""
+          title: '',
+          descripcion: '',
         },
         {
-          title: "",
-          descripcion: ""
+          title: '',
+          descripcion: '',
         },
         {
-          title: "",
-          descripcion: ""
+          title: '',
+          descripcion: '',
         },
         {
-          title: "",
-          descripcion: ""
-        }],
+          title: '',
+          descripcion: '',
+        },
+      ],
 
-      descripcion: [""],
-      time: "",
-      image: "",
+      descripcion: [''],
+      time: '',
+      image: '',
       width: 0,
       height: 0,
     },
 
     users: {
-      title: "",
-      descripcion: [""],
-      weakPoints: [""],
+      title: '',
+      descripcion: [''],
+      weakPoints: [''],
       person1: {
-        title: "",
-        name: "",
-        descripcion:[ ""],
-        image: "",
+        title: '',
+        name: '',
+        descripcion: [''],
+        image: '',
         width: 0,
         height: 0,
-      }
+      },
     },
 
     design: {
       0: {
-        title: "",
-        descripcion: [""],
-        image: "",
+        title: '',
+        descripcion: [''],
+        image: '',
         width: 400,
         height: 400,
       },
       1: {
-        title: "",
-        descripcion: [""],
-        image: "",
+        title: '',
+        descripcion: [''],
+        image: '',
         width: 400,
         height: 400,
       },
       2: {
-        title: "",
-        descripcion: [""],
-        image: "",
+        title: '',
+        descripcion: [''],
+        image: '',
         width: 400,
         height: 400,
-        link: ""
+        link: '',
       },
       3: {
-        title: "",
-        descripcion: [""],
+        title: '',
+        descripcion: [''],
         width: 400,
         height: 400,
       },
       4: {
         rond1: {
-          title: "",
-          descripcion: [
-            "",
-            "",
-            "",
-          ],
+          title: '',
+          descripcion: ['', '', ''],
         },
         rond2: {
-          title: "",
-          descripcion: [""],
-        }
-      }
-
+          title: '',
+          descripcion: [''],
+        },
+      },
     },
 
     improveDesign: {
       maquetas: {
-        title: "",
+        title: '',
         0: {
-          descripcion: "",
-          image1: "",
+          descripcion: '',
+          image1: '',
           width: 400,
           height: 400,
         },
         1: {
-          descripcion: "",
-          image1: "",
+          descripcion: '',
+          image1: '',
           width: 400,
           height: 400,
         },
       },
 
       hiFiPrototype: {
-        title: "",
-        descripcion: "",
-        image: "",
+        title: '',
+        descripcion: '',
+        image: '',
         width: 400,
         height: 400,
-        link: ""
+        link: '',
       },
       accesibility: {
-        title: "",
-        descripcion: [""]
+        title: '',
+        descripcion: [''],
       },
     },
     stickerSheets: {
-      title: "",
-      img: [""]
+      title: '',
+      img: [''],
     },
     next: {
-      conclusions: [""],
+      conclusions: [''],
 
-      nextSteps: [""]
+      nextSteps: [''],
     },
 
     thanks: {
-      descripcion: "",
-      email: "luiskendornarvaez@gmail.com",
+      descripcion: '',
+      email: 'luiskendornarvaez@gmail.com',
     },
-
   };
 
   ngOnInit() {
-    const id = this.service.getItem("project")
-    console.log("este es el id", id, " s ", projectsDesign.length)
+    const id = this.service.getItem('project');
+    console.log('este es el id', id, ' s ', projectsDesign.length);
 
     for (let i = 0; i < projectsDesign.length; i++) {
-      if (projectsDesign[i].title === id) { this.projects = projectsDesign[i] }
+      if (projectsDesign[i].title === id) {
+        this.projects = projectsDesign[i];
+      }
     }
-
   }
 }

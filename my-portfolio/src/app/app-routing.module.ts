@@ -6,21 +6,26 @@ import { DetailComponent } from './components/detail/detail.component';
 import { DesignProjectsComponent } from './components/design-projects/design-projects.component';
 
 const routes: Routes = [
-  {path:"", component:HomePageComponent},
- 
-  {path:"back", component:ProjetcsComponent},
-  {path:"designProjects", component:DesignProjectsComponent, children: [
-    { path: 'detail/:', component: DetailComponent }]},
-  // {path:"detail/:", component:DetailComponent}, 
-  {path:"**", component:HomePageComponent},//en caso de que la ruata no exista nos dirige al home
-  // { path: 'ruta-especifica', component: RutaEspecificaComponent },
+  { path: '', component: HomePageComponent },
+
+  { path: 'back', component: ProjetcsComponent },
+  {
+    path: 'designProjects',
+    component: DesignProjectsComponent,
+    children: [{ path: 'detail/:', component: DetailComponent }],
+  },
+  { path: '**', component: HomePageComponent }, //en caso de que la ruata no exista nos dirige al home
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  imports: [
+    RouterModule.forRoot(routes, {
+      scrollPositionRestoration: 'top', // Realiza un desplazamiento suave hacia la parte superior
+    }),
+  ],
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}
 
 // const routes: Routes = [
 //   // Otras rutas...

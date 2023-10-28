@@ -1,87 +1,110 @@
 <div class="containerHome">
+  <!-- 2div -->
+  <div class="decoration00">
+    <!-- <section class="decoration01"></section> -->
+    <div class="decorationline">
+      <section class="decoration02"></section>
+      <section class="decoration03"></section>
+      <section class="decoration04"></section>
+    </div>
+  </div>
 
+  <!-- 3div -->
+
+  <div class="content">
+    <!-- <section class="containerInfo"> -->
+    <section class="left-content">
+      <img
+        class="logo-foto"
+        src="../../../assets/logo-foto.png"
+        alt="imagen.prueba"
+        width="400px"
+        height="400px"
+      />
+
+      <section class="logos">
+        <h1>"Codificando con Pasión, Aprendiendo sin Límites."</h1>
+        <span>
+          <a
+            href="https://www.linkedin.com/in/luis-narvaez-"
+            [target]="['_blank']"
+          >
+            <img
+              src="../../../assets/Image/LinkIdinICon.png"
+              alt="LinkIdinICon"
+              width="50px"
+            />
+          </a>
+          <a href="https://github.com/luisnarv" [target]="['_blank']">
+            <img
+              src="../../../assets//Image/GithubIcon.png"
+              alt="GithubIcon"
+              width="50px"
+          /></a>
+        </span>
+      </section>
+    </section>
+
+    <section class="right-content">
+      <ul>
+        <li>
+          <span>
+            <img
+              src="../../../assets/Image/back.svg"
+              alt="server.png"
+              width="50px"
+          /></span>
+          <!-- <a href="/back">BackEnd developer</a>   -->
+          <a [routerLink]="['/back']">BackEnd developer</a>
+        </li>
+        <li>
+          <span>
+            <img
+              src="../../../assets/Image/Front.svg"
+              alt="PantallaIcon"
+              width="50px"
+            />
+          </span>
+          <a [routerLink]="['/back']">FrontEnd developer</a>
+        </li>
+        <li>
+          <span>
+            <img
+              src="../../../assets/DesignIcon.svg"
+              alt="DiseñoIcon"
+              width="50px"
+            />
+          </span>
+          <a [routerLink]="['/designProjects']">Design/UX</a>
+        </li>
+        <li>
+          <span>
+            <img
+              src="../../../assets/Image/cvicon.svg"
+              alt="CVIcon"
+              width="50px"
+            />
+          </span>
+          <a [routerLink]="['/About']">About</a>
+        </li>
+      </ul>
+    </section>
+    <!-- </section> -->
     <!-- <section class="tecnologi">
-        <ul>
-            <li>Java Script</li>
-            <li>C ++</li>
-            <li>Node JS</li>
-            <li>Angular</li>
-            <li>React</li>
-            <li>Redux</li>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>SQL</li>
-            <li>MongoDB</li>
-        </ul>
+      <ul>
+        <li>Java Script</li>
+        <li>C ++</li>
+        <li>Node JS</li>
+        <li>Angular</li>
+        <li>React</li>
+        <li>Redux</li>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>SQL</li>
+        <li>MongoDB</li>
+      </ul>
     </section> -->
+  </div>
 
-
-    <!-- 2div -->
-    <div class="decoration00">
-
-        <section class="decoration01"></section>
-       <div class="decorationline">
-        <section class="decoration02"></section>
-           <section class="decoration03"></section>
-           <section class="decoration04"></section>
-       </div>
-   </div> 
-
-
-
-   <!-- 3div -->
-   <div class="containerInfo-info">
-
-    <div class="containerInfo">
-        <div class="left-list">
-            <img class="left-listPhoto" src="../../../assets/logo-foto.png" alt="imagen.prueba" width="400px"
-                height="400px">
-            <br>
-            <!-- <h1>Luis Kendor Narvaez Vidal</h1> -->
-            <hr>
-
-            <div>
-                <span>
-                    <img src="../../../assets/Image/LinkIdinICon.png" alt="LinkIdinICon" width="50px">
-                </span>
-                <span>
-                    <img src="../../../assets//Image/GithubIcon.png" alt="GithubIcon" width="50px">
-                </span>
-
-            </div>
-
-        </div>
-
-
-        <div class="right-list">
-            <ul>
-                <li>
-                    <span> <img src="../../../assets/Image/back.svg" alt="server.png" width="50px"></span>
-                  <!-- <a href="/back">BackEnd developer</a>   -->
-                  <a [routerLink]="['/back']" >BackEnd developer</a>  
-                </li>
-                <li>
-                    <span>
-                        <img src="../../../assets/Image/Front.svg" alt="PantallaIcon" width="50px">
-                    </span>
-                    <a [routerLink]="['/back']" >FrontEnd developer</a>
-                </li>
-                <li>
-                    <span>
-                        <img src="../../../assets/DesignIcon.svg" alt="DiseñoIcon" width="50px">
-                    </span>
-                    <a [routerLink]="['/designProjects']" >Design/UX</a>  
-                </li>
-                <li>
-                    <span>
-                        <img src="../../../assets/Image/cvicon.svg" alt="CVIcon" width="50px">
-                    </span>
-                    <a [routerLink]="['/About']" >About</a>
-                </li>
-            </ul>
-        </div>
-    </div>
-
-    </div>
-    <!-- <app-footer></app-footer> -->
-<router-outlet></router-outlet>
+  <router-outlet></router-outlet>
+</div>

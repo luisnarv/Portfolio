@@ -1,26 +1,62 @@
 <div class="contenedor">
-    <section class="formulario">
+  <div class="footer">
+    <br />
+    <img src="../../../assets/Logos/logo_white_large.webp" alt="logo.webp" />
+    <ul>
+      <li>
+        <a href="https://github.com/luisnarv" [target]="['_blank']">
+          <img
+            src="../../../assets/Logos/Logo_white_git.webp"
+            alt="GithubIcon"
+            width="50px"
+        /></a>
+      </li>
+      <li>
+        <a href="https://linkedin.com/in/luis-narvaez-" [target]="['_blank']">
+          <img
+            src="../../../assets/Logos/in_white_logo.webp"
+            alt="LinkIdinICon"
+            width="50px"
+        /></a>
+      </li>
+      <li>Enlace 3</li>
+    </ul>
+  </div>
+  <section class="formulario">
     <h1>Contacto</h1>
-    <br>
-    <form [formGroup]="form" class="form" action="https://formsubmit.co/luiskendornarvaez@gmail.com" method="POST">
-        <span class="flex">
-            <input formControlName="name" type="text" id="name" name="name" required placeholder="Nombre completo">
-            <input formControlName="email" type="email" name="email" required placeholder="ejemplo@gmail.com">
-        </span>
-        <textarea formControlName="message" name="message" rows="4" required
-            placeholder="Ingresa tu mensaje"></textarea>
-        <button *ngIf="form.invalid === false"  type="submit" >Enviar</button>
+    <br />
+    <form
+      [formGroup]="form"
+      class="form"
+      action="https://formsubmit.co/luiskendornarvaez@gmail.com"
+      method="POST"
+    >
+      <span class="flex">
+        <input
+          formControlName="name"
+          type="text"
+          id="name"
+          name="name"
+          required
+          placeholder="Nombre completo"
+        />
+        <input
+          formControlName="email"
+          type="email"
+          name="email"
+          required
+          placeholder="ejemplo@gmail.com"
+        />
+      </span>
+      <textarea
+        formControlName="message"
+        name="message"
+        rows="4"
+        required
+        placeholder="Ingresa tu mensaje"
+      ></textarea>
+      <button *ngIf="form.invalid === false" type="submit">Enviar</button>
     </form>
-
-</section>
-    <!-- {{form.value | json}} -->
-
-    <div class="footer">
-        <p>Ejemplo de elementos de un footer:</p>
-        <ul>
-            <li><a href="#"> <img src="../../../assets//Image/GithubIcon.png" alt="GithubIcon" width="50px"></a></li>
-            <li><a href="#"> <img src="../../../assets/Image/LinkIdinICon.png" alt="LinkIdinICon" width="50px"></a></li>
-            <li><a href="#">Enlace 3</a></li>
-        </ul>text">
-    </div>
+  </section>
+  <!-- {{form.value | json}} -->
 </div>

@@ -1,228 +1,273 @@
-
 <div class="mainDetail">
-    <section class="titleDetail">
-        <h1>{{this.projects.title}}</h1>
-        <hr>
-        <h2>{{this.projects.author}}</h2>
-    </section>
+  <span class="btn-back"
+    ><a [routerLink]="['/designProjects']"
+      ><img src="../../../assets/icons/left.svg" alt="back.svg" />
+    </a>
+  </span>
+  <section class="titleDetail">
+    <h1>{{ this.projects.title }}</h1>
+    <hr />
+    <h2>{{ this.projects.author }}</h2>
+  </section>
 
-    <section class="summaryDetail-container fondo medidas" *ngIf="projects.summaryProject.descripcion">
-        <div>
-            <span>
-                <ng-container *ngFor="let resumen of projects.summaryProject.descripcion">
-                    <p>{{resumen}}</p>
-                    <br>
-                </ng-container>
-                <br>
-                <strong>{{projects.summaryProject.time}}</strong>
-                <hr>
-            </span>
-            <img [src]="projects.summaryProject.image" alt="image.png" [width]="projects.summaryProject.width">
-        </div>
-    </section>
-
-
-    <section class="summaryCharac medidas">
-        <ul>
-            <!-- Utiliza un bucle para recorrer los elementos de this.projects.summaryProject -->
-            <ng-container *ngFor="let project of this.projects.summaryProject.summary ">
-                <li>
-                    <h3>{{project.title}}</h3>
-                    <p>{{project.descripcion}}</p>
-                </li>
-            </ng-container>
-        </ul>
-    </section>
-
-    <section class="users medidas">
-        <div>
-            <h2>{{this.projects.users.title}}</h2>
-            <span>
-                <ng-container *ngFor="let resumen of this.projects.users.descripcion">
-                    <p>{{resumen}}</p>
-                    <br>
-                </ng-container>
-            </span>
-
-            <ul *ngIf="this.projects.users.weakPoints[0].length > 0">
-                <span *ngFor="let resumen of this.projects.users.weakPoints">
-                    <li>{{resumen}}</li>
-                    <br>
-                </span>
-            </ul>
-        </div>
-    </section>
-
-    <section class="usersPerson fondo medidas">
-        <span>
-            <h3>{{this.projects.users.person1.title}} "{{this.projects.users.person1.name}}"</h3>
-            <hr>
-            <ng-container *ngFor="let person of this.projects.users.person1.descripcion">
-            <p>{{person}}</p>
-            <br>
-            </ng-container>
-        </span>
-        <img [src]="this.projects.users.person1.image" alt="image.png" width={{this.projects.users.person1.width}}>
-
-    </section>
-
-    <br>
-
-    <section class="below schemasScreen fondo medidas">
-        <span>
-            <h2>{{this.projects.design[0].title}}</h2>
-            <span *ngFor="let resumen of this.projects.design[0].descripcion">
-                <p>{{resumen}}</p>
-
-            </span>
-        </span>
-        <img [src]="this.projects.design[0].image" alt="image.png" width={{this.projects.design[0].width}}
-            height={{this.projects.design[0].height}}>
-    </section>
-
-    <br>
-
-    <section class="schemasScreen fondo medidas">
-        <span>
-            <h2>{{this.projects.design[1].title}}</h2>
-            <span *ngFor="let resumen of this.projects.design[1].descripcion">
-                <p>{{resumen}}</p>
-                <br>
-            </span>
-        </span>
-        <img [src]="this.projects.design[1].image" alt="image.png" width={{this.projects.design[1].width}}
-            [height]="this.projects.design[1].height">
-    </section>
-    <br>
-
-    <section class="below schemasScreen fondo medidas">
-        <span>
-            <h2>{{this.projects.design[2].title}}</h2>
-            <span *ngFor="let resumen of this.projects.design[2].descripcion">
-                <p>{{resumen}}</p>
-                <br>
-            </span>
-            <a href={{this.projects.design[2].link}}>Ver Proyecto</a>
-        </span>
-
-        <img [src]="this.projects.design[2].image" alt="image.png" width={{this.projects.design[2].width}}
-            height={{this.projects.design[2].height}}>
-
-    </section>
-    <br>
-
-    <section class="schemasScreen medidas" *ngIf="this.projects.design[3].descripcion[0].length > 1">
-        <span>
-            <h2>{{this.projects.design[3].title}}</h2>
-            <span *ngFor="let resumen of this.projects.design[3].descripcion">
-                <p>{{resumen}}</p>
-                <br>
-            </span>
-        </span>
-    </section>
-    <br>
-    <section class="findings medidas">
-
-        <p>{{this.projects.design[4].rond1.title}}</p>
-        <ul>
-            <li *ngFor="let rond of this.projects.design[4].rond1.descripcion">{{rond}}</li>
-        </ul>
-        <br>
-
-        <ng-container *ngIf="this.projects.design[4].rond2.title.length > 1">
-            <p>{{this.projects.design[4].rond2.title}}</p>
-            <ul>
-                <li *ngFor="let rond of this.projects.design[4].rond2.descripcion">{{rond}}</li>
-            </ul>
+  <section
+    class="summaryDetail-container fondo medidas"
+    *ngIf="projects.summaryProject.descripcion"
+  >
+    <div>
+      <span>
+        <ng-container
+          *ngFor="let resumen of projects.summaryProject.descripcion"
+        >
+          <p>{{ resumen }}</p>
+          <br />
         </ng-container>
+        <br />
+        <strong>{{ projects.summaryProject.time }}</strong>
+        <hr />
+      </span>
+      <img
+        [src]="projects.summaryProject.image"
+        alt="image.png"
+        [width]="projects.summaryProject.width"
+      />
+    </div>
+  </section>
 
-    </section>
+  <section class="summaryCharac medidas">
+    <ul>
+      <!-- Utiliza un bucle para recorrer los elementos de this.projects.summaryProject -->
+      <ng-container
+        *ngFor="let project of this.projects.summaryProject.summary"
+      >
+        <li>
+          <h3>{{ project.title }}</h3>
+          <p>{{ project.descripcion }}</p>
+        </li>
+      </ng-container>
+    </ul>
+  </section>
 
+  <section class="users medidas">
+    <div>
+      <h2>{{ this.projects.users.title }}</h2>
+      <span>
+        <ng-container *ngFor="let resumen of this.projects.users.descripcion">
+          <p>{{ resumen }}</p>
+          <br />
+        </ng-container>
+      </span>
 
-    <br>
-
-    <section class="usersMockups fondo medidas">
-        <h2>{{this.projects.improveDesign.maquetas.title}}</h2>
-        <div>
-            <p>{{this.projects.improveDesign.maquetas[0].descripcion}}</p>
-
-            <span>
-                <img [src]="this.projects.improveDesign.maquetas[0].image1"
-                    width={{this.projects.improveDesign.maquetas[0].width}}
-                    height={{this.projects.improveDesign.maquetas[0].height}} alt="image.png">
-            </span>
-        </div>
-
-        <div *ngIf="this.projects.improveDesign.maquetas[1].descripcion">
-            <p>{{this.projects.improveDesign.maquetas[1].descripcion}}</p>
-            <span>
-                <img [src]="this.projects.improveDesign.maquetas[1].image1" alt="image.png">
-            </span>
-        </div>
-    </section>
-    <br>
-    <section class="below schemasScreen fondo medidas">
-        <span>
-            <h2>{{this.projects.improveDesign.hiFiPrototype.title}}</h2>
-            <p>{{this.projects.improveDesign.hiFiPrototype.descripcion}}</p>
-            <br>
-            <a href="{{this.projects.improveDesign.hiFiPrototype.link}}">Ver Prototipo</a>
-
+      <ul *ngIf="this.projects.users.weakPoints[0].length > 0">
+        <span *ngFor="let resumen of this.projects.users.weakPoints">
+          <li>{{ resumen }}</li>
+          <br />
         </span>
+      </ul>
+    </div>
+  </section>
 
-        <img [src]="this.projects.improveDesign.hiFiPrototype.image" alt="image.png"
-            width={{this.projects.improveDesign.hiFiPrototype.width}}
-            height={{this.projects.improveDesign.hiFiPrototype.height}}>
+  <section class="usersPerson fondo medidas">
+    <span>
+      <h3>
+        {{ this.projects.users.person1.title }} "{{
+          this.projects.users.person1.name
+        }}"
+      </h3>
+      <hr />
+      <ng-container
+        *ngFor="let person of this.projects.users.person1.descripcion"
+      >
+        <p>{{ person }}</p>
+        <br />
+      </ng-container>
+    </span>
+    <img
+      [src]="this.projects.users.person1.image"
+      alt="image.png"
+      width="{{ this.projects.users.person1.width }}"
+    />
+  </section>
 
+  <br />
 
-    </section>
-    <br>
+  <section class="below schemasScreen fondo medidas">
+    <span>
+      <h2>{{ this.projects.design[0].title }}</h2>
+      <span *ngFor="let resumen of this.projects.design[0].descripcion">
+        <p>{{ resumen }}</p>
+      </span>
+    </span>
+    <img
+      [src]="this.projects.design[0].image"
+      alt="image.png"
+      width="{{ this.projects.design[0].width }}"
+      height="{{ this.projects.design[0].height }}"
+    />
+  </section>
 
+  <br />
 
-    <section class="usersAccesibility medidas">
-        <h3>{{this.projects.improveDesign.accesibility.title}}</h3>
-        <ul>
-            <li *ngFor="let resumen of projects.improveDesign.accesibility.descripcion">{{resumen}}</li>
-        </ul>
-    </section>
+  <section class="schemasScreen fondo medidas">
+    <span>
+      <h2>{{ this.projects.design[1].title }}</h2>
+      <span *ngFor="let resumen of this.projects.design[1].descripcion">
+        <p>{{ resumen }}</p>
+        <br />
+      </span>
+    </span>
+    <img
+      [src]="this.projects.design[1].image"
+      alt="image.png"
+      width="{{ this.projects.design[1].width }}"
+      [height]="this.projects.design[1].height"
+    />
+  </section>
+  <br />
 
-    <hr>
-    <br>
+  <section class="below schemasScreen fondo medidas">
+    <span>
+      <h2>{{ this.projects.design[2].title }}</h2>
+      <span *ngFor="let resumen of this.projects.design[2].descripcion">
+        <p>{{ resumen }}</p>
+        <br />
+      </span>
+      <a href="{{ this.projects.design[2].link }}">Ver Proyecto</a>
+    </span>
 
-    <section class="stickerSheets medidas">
-        <h2>{{projects.stickerSheets.title}}</h2>
-        <ng-container *ngFor="let sticker of projects.stickerSheets.img">
-            <img [src]=[sticker] alt="stickerSheets.webp"></ng-container>
+    <img
+      [src]="this.projects.design[2].image"
+      alt="image.png"
+      width="{{ this.projects.design[2].width }}"
+      height="{{ this.projects.design[2].height }}"
+    />
+  </section>
+  <br />
 
-    </section>
-    <section class="conclusions medidas ">
-        <ul>
-            <li *ngFor="let resumen of projects.next.conclusions">
-                <span>{{resumen}} </span>
-            </li>
-        </ul>
-    </section>
+  <section
+    class="schemasScreen medidas"
+    *ngIf="this.projects.design[3].descripcion[0].length > 1"
+  >
+    <span>
+      <h2>{{ this.projects.design[3].title }}</h2>
+      <span *ngFor="let resumen of this.projects.design[3].descripcion">
+        <p>{{ resumen }}</p>
+        <br />
+      </span>
+    </span>
+  </section>
+  <br />
+  <section class="findings medidas">
+    <p>{{ this.projects.design[4].rond1.title }}</p>
+    <ul>
+      <li *ngFor="let rond of this.projects.design[4].rond1.descripcion">
+        {{ rond }}
+      </li>
+    </ul>
+    <br />
 
-    <hr>
-    <br>
-    <section class="next medidas">
-        <h3>Siguientes pasos</h3>
-        <ol>
+    <ng-container *ngIf="this.projects.design[4].rond2.title.length > 1">
+      <p>{{ this.projects.design[4].rond2.title }}</p>
+      <ul>
+        <li *ngFor="let rond of this.projects.design[4].rond2.descripcion">
+          {{ rond }}
+        </li>
+      </ul>
+    </ng-container>
+  </section>
 
-            <li *ngFor="let resumen of projects.next.nextSteps">
-                {{resumen}}
-            </li>
-        </ol>
-    </section>
+  <br />
 
-    <hr>
-    <br>
-    <section class="end">
-        <p>{{this.projects.thanks.descripcion}}</p>
-        <a href="https://mail.google.com/mail/u/0/#inbox">{{this.projects.thanks.email}}</a>
+  <section class="usersMockups fondo medidas">
+    <h2>{{ this.projects.improveDesign.maquetas.title }}</h2>
+    <div>
+      <p>{{ this.projects.improveDesign.maquetas[0].descripcion }}</p>
 
+      <span>
+        <img
+          [src]="this.projects.improveDesign.maquetas[0].image1"
+          width="{{ this.projects.improveDesign.maquetas[0].width }}"
+          height="{{ this.projects.improveDesign.maquetas[0].height }}"
+          alt="image.png"
+        />
+      </span>
+    </div>
 
-    </section>
+    <div *ngIf="this.projects.improveDesign.maquetas[1].descripcion">
+      <p>{{ this.projects.improveDesign.maquetas[1].descripcion }}</p>
+      <span>
+        <img
+          [src]="this.projects.improveDesign.maquetas[1].image1"
+          alt="image.png"
+        />
+      </span>
+    </div>
+  </section>
+  <br />
+  <section class="below schemasScreen fondo medidas">
+    <span>
+      <h2>{{ this.projects.improveDesign.hiFiPrototype.title }}</h2>
+      <p>{{ this.projects.improveDesign.hiFiPrototype.descripcion }}</p>
+      <br />
+      <a href="{{ this.projects.improveDesign.hiFiPrototype.link }}"
+        >Ver Prototipo</a
+      >
+    </span>
 
+    <img
+      [src]="this.projects.improveDesign.hiFiPrototype.image"
+      alt="image.png"
+      width="{{ this.projects.improveDesign.hiFiPrototype.width }}"
+      height="{{ this.projects.improveDesign.hiFiPrototype.height }}"
+    />
+  </section>
+  <br />
 
+  <section class="usersAccesibility medidas">
+    <h3>{{ this.projects.improveDesign.accesibility.title }}</h3>
+    <ul>
+      <li
+        *ngFor="let resumen of projects.improveDesign.accesibility.descripcion"
+      >
+        {{ resumen }}
+      </li>
+    </ul>
+  </section>
+
+  <hr />
+  <br />
+
+  <section class="stickerSheets medidas">
+    <h2>{{ projects.stickerSheets.title }}</h2>
+    <ng-container *ngFor="let sticker of projects.stickerSheets.img">
+      <img [src]="[sticker]" alt="stickerSheets.webp"
+    /></ng-container>
+  </section>
+  <section class="conclusions medidas">
+    <ul>
+      <li *ngFor="let resumen of projects.next.conclusions">
+        <span>{{ resumen }} </span>
+      </li>
+    </ul>
+  </section>
+
+  <hr />
+  <br />
+  <section class="next medidas">
+    <h3>Siguientes pasos</h3>
+    <ol>
+      <li *ngFor="let resumen of projects.next.nextSteps">
+        {{ resumen }}
+      </li>
+    </ol>
+  </section>
+
+  <hr />
+  <br />
+  <section class="end">
+    <p>{{ this.projects.thanks.descripcion }}</p>
+    <a href="https://mail.google.com/mail/u/0/#inbox">{{
+      this.projects.thanks.email
+    }}</a>
+  </section>
 </div>

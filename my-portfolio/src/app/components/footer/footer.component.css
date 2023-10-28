@@ -1,78 +1,80 @@
 /* ------------------------------------- Contenedor principal --------------------------- */
 .contenedor {
-    display: flex;
-    background-color: rgb(61, 59, 59);
-    padding: 50px 100px;
+  display: flex;
+  background-color: rgb(61, 59, 59);
+  padding: 50px 100px;
 }
 
 /* ------------------------------------- formulario --------------------------- */
 .formulario {
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    align-items: center; 
-    color: #ffff;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #ffff;
 }
 
 .form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 50%;
-   
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
 }
 
 .flex {
-    display: flex;
-
+  display: flex;
 }
 
 .flex input {
-    margin: 20px 5px;
-    padding: 10px;
-    width: 200px;
-    height: 40px;
-    border-radius: 5px;
-    border: none;
-    outline-style: none;
+  margin: 20px 5px;
+  padding: 10px;
+  width: 200px;
+  height: 40px;
+  border-radius: 5px;
+  border: none;
+  outline-style: none;
 }
 
 textarea {
-    font-size: 1rem;
-    padding: 10px;
-    width: 400px;
-    height: 300px;
-    max-width: 400px;
-    max-height: 500px;
-    outline-style: none;
-    border-radius: 5px;
+  font-size: 1rem;
+  padding: 10px;
+  width: 400px;
+  height: 300px;
+  max-width: 400px;
+  max-height: 500px;
+  outline-style: none;
+  border-radius: 5px;
 }
 
 button {
-    width: 400px;
-    height: 40px;
-    padding: 10px;
-    border: none;
-    margin: 20px 0px;
-    color: black;
-    border-radius: 10px;
-    background-color: rgb(19, 114, 19);
+  width: 400px;
+  height: 40px;
+  padding: 10px;
+  border: none;
+  margin: 20px 0px;
+  color: black;
+  border-radius: 10px;
+  background-color: rgb(255, 255, 255);
 }
 
 .disable {
-    background-color: gray;
-    color: aliceblue;
+  background-color: gray;
+  color: aliceblue;
 }
-
-
-
 
 /* ------------------------------------- redes --------------------------- */
 
-.footer{
-color: white;
-font-size: 1rem;
+.footer {
+  color: white;
+  font-size: 1rem;
+  width: 50%;
 }
-ul{
-    list-style: none;
+ul {
+  padding: 100px 20px;
+  list-style: none;
+  display: flex;
+}
+
+li {
+  margin: 10px;
 }

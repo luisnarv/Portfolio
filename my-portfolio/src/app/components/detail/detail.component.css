@@ -1,150 +1,149 @@
-hr{
-    width: 100%;
-    margin: 10px 0;
+hr {
+  width: 100%;
+  margin: 10px 0;
 }
-.fondo{
-    background-color: #DFECF0;
+.fondo {
+  background-color: #dfecf0;
 }
-.medidas{
-    width: 100vw;
-    height: auto;
-    padding: 25px 100px;
+.medidas {
+  width: 100vw;
+  height: auto;
+  padding: 25px 100px;
+}
+
+.btn-back {
+  position: fixed;
+  transform: translate(50px, 120px);
 }
 
 /* -------------------------------- mainDetail  ---------------------------- */
 
-.mainDetail{
-    font-size: 1.5rem;
+.mainDetail {
+  font-size: 1.5rem;
 }
 
 /* ----------------------------- titleDetail ------------------------------- */
 
-.titleDetail{
-   width: 100vw;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    padding: 200px;
+.titleDetail {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 200px;
 }
 
-.titleDetail hr{
-    margin: 0px;
+.titleDetail hr {
+  margin: 0px;
 }
-
 
 /* ------------------------------ summaryDetail-container ------------------------------ */
 
-.summaryDetail-container{
-        text-align: justify;
-       
+.summaryDetail-container {
+  text-align: justify;
 }
-.summaryDetail-container div{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+.summaryDetail-container div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
-
-.summaryDetail-container span{
-    margin: 20px;
-    display: flex;
-    flex-direction: column;
+.summaryDetail-container span {
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
 }
 
 /* -------------------------- summaryCharac ---------------------------- */
 
-.summaryCharac{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.summaryCharac {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.summaryCharac ul{
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
+.summaryCharac ul {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
-.summaryCharac li{
-    margin: 20px 0px;
-    display: flex;
-    flex-direction: column;
-    list-style: none;
-    text-align: justify;
-    width: 50%;
-    align-items: center;
+.summaryCharac li {
+  margin: 20px 0px;
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  text-align: justify;
+  width: 50%;
+  align-items: center;
 }
 
-.summaryCharac p{
-    width: 300px;
+.summaryCharac p {
+  width: 300px;
 }
 
 /* ---------------------------------- users --------------------------------------- */
 
-.users{
-    display: flex;
-    flex-direction: column;
+.users {
+  display: flex;
+  flex-direction: column;
 }
 
-.users div{
-    text-align: justify;
+.users div {
+  text-align: justify;
 }
 
-.users ol{
-    margin-top: 100px;
+.users ol {
+  margin-top: 100px;
 }
 
 /* ---------------------------------- usersPerson --------------------------------------- */
 
-
-.usersPerson{
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    justify-content: space-evenly;
+.usersPerson {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-evenly;
 }
 
-
-.usersPerson span{
-    display: flex;
-    margin: 10px;
-    align-items: flex-start;
-    flex-direction: column;
+.usersPerson span {
+  display: flex;
+  margin: 10px;
+  align-items: flex-start;
+  flex-direction: column;
 }
-.usersPerson img{
-    margin: 20px;
+.usersPerson img {
+  margin: 20px;
 }
 /* ---------------------------------- schemasScreen --------------------------------------- */
 
-.schemasScreen{
-    display: flex;
-    align-items: center;
+.schemasScreen {
+  display: flex;
+  align-items: center;
 }
 
-.schemasScreen img{
-    margin: 50px;
+.schemasScreen img {
+  margin: 50px;
 }
-.schemasScreen a{
-    text-decoration: none;
-    color: black;
+.schemasScreen a {
+  text-decoration: none;
+  color: black;
 }
 
 /* ---------------------------------- below --------------------------------------- */
 
-.below{
-    /* display: flex;
+.below {
+  /* display: flex;
     flex-direction: column; */
-    display: flex;
+  display: flex;
 }
 
 /* ---------------------------------- findings --------------------------------------- */
 
-
-.findings{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.findings {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .findings li {
@@ -152,30 +151,30 @@ hr{
 }
 /* ---------------------------------- usersMockups --------------------------------------- */
 
-.usersMockups{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.usersMockups {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.usersMockups p{
-    margin:20px 0;
+.usersMockups p {
+  margin: 20px 0;
 }
-.usersMockups div{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.usersMockups div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 /* ---------------------------------- usersAccesibility --------------------------------------- */
 
 /* .usersAccesibility{
 } */
-.usersAccesibility ol{
-    display: flex;
+.usersAccesibility ol {
+  display: flex;
 }
-.usersAccesibility li{
-   margin: 20px;
+.usersAccesibility li {
+  margin: 20px;
 }
 
 /* ---------------------------------- conclusions --------------------------------------- */
@@ -183,24 +182,24 @@ hr{
 /* .conclusions{
    
 } */
-.conclusions ol{
-display: flex;
+.conclusions ol {
+  display: flex;
 }
 
-.conclusions li{
-    margin: 20px;
+.conclusions li {
+  margin: 20px;
 }
 
 /* ---------------------------------- stickerSheets --------------------------------------- */
-.stickerSheets{
-    display: flex;
-    flex-direction: column;
-    align-items: center;   
+.stickerSheets {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.stickerSheets img{
-    width: 100%;
-    height: auto;
+.stickerSheets img {
+  width: 100%;
+  height: auto;
 }
 
 /* ---------------------------------- next --------------------------------------- */
@@ -209,22 +208,21 @@ display: flex;
   
 } */
 
-.next li{
-    margin: 10px 0;
+.next li {
+  margin: 10px 0;
 }
 
 /* ---------------------------------- end --------------------------------------- */
-.end{
-    height: 100vh;
-    width: 100vw;
-    padding: 50px 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+.end {
+  height: 100vh;
+  width: 100vw;
+  padding: 50px 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
-.end p{
-    margin: 20px 0;
-    
+.end p {
+  margin: 20px 0;
 }
