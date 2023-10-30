@@ -59,6 +59,12 @@ export const projectsDesign = [
       },
     },
 
+    mapSite: {
+      title: '',
+      descripcion: [''],
+      img: '',
+    },
+
     design: {
       0: {
         title: 'Esquemas de página en papel',
@@ -195,28 +201,29 @@ export const projectsDesign = [
         {
           title: 'Problema',
           descripcion:
-            'Los Sitios web de adopción para mascotas tienen diseños desordenados, procesos de pagos e información confusos.',
+            'Es común encontrar que los sitios web de adopción de mascotas presentan diseños caóticos, procesos de pago confusos y falta de información clara.',
         },
         {
           title: 'Objetivo',
           descripcion:
-            'Diseñar un sitio web que facilite el proceso de adopcón para los usuarios, que permita una navegación clara y procesos de pago rápido.',
+            'Diseñar un sitio web que simplifique el proceso de adopción para los usuarios, ofreciendo una navegación intuitiva y un proceso de pago ágil.',
         },
         {
           title: 'Rol',
-          descripcion:
-            'Diseñador de UX, líder de diseño del sitio web de Pet shop.',
+          descripcion: 'Diseñador líder de UX del sitio web de Pet Shop.',
         },
         {
           title: 'Responsabilidades',
           descripcion:
-            'Realizar entrevistas, esquemas en papel y digitales, crear prototipos de baja y alta fidelidad, realizar estudios de facilidad de uso, tener en cuenta la accesibilidad, repetir los diseños y el diseño adaptable.',
+            'Llevar a cabo entrevistas, elaborar esquemas en papel y digitales, desarrollar prototipos de baja y alta fidelidad, realizar estudios de usabilidad, considerar la accesibilidad, iterar en el diseño y adoptar un enfoque de diseño adaptable.',
         },
       ],
       descripcion: [
-        'Pet shop es una página web de un centro de adopción accesible para usuarios de 19 a 65 años, el objetivo de Pet shop es permitir a los usuarios iniciar el proceso de adopción desde cualquier lugar, permite comprar de manera fácil y rapida',
+        'Pet Shop es una página web de un centro de adopción de mascotas diseñada para ser accesible a usuarios de edades comprendidas entre 19 y 65 años. El propósito de Pet Shop es brindar a los usuarios la posibilidad de iniciar el proceso de adopción desde cualquier lugar, con la facilidad de realizar compras de forma rápida y sencilla.',
+        'Nuestra plataforma, una aplicación web completamente responsive, tiene como objetivo informar a los usuarios sobre los requisitos y pasos necesarios para adoptar una mascota. Ofrecemos la opción de agendar una cita o completar un formulario si desean comenzar el proceso de adopción. Dado que este proceso puede ser prolongado, permitimos a los usuarios avanzar en el papeleo desde la comodidad de su hogar.',
+        'Además de nuestros servicios de adopción, Pet Shop cuenta con una tienda en línea donde los amantes de las mascotas pueden adquirir productos y accesorios de alta calidad. Nuestra misión es facilitar la adopción responsable y mejorar la vida de las mascotas y sus dueños.',
       ],
-      time: 'Agosto 2023 - Agosto 2023',
+      time: 'Agosto de 2023 - Agosto de 2023',
       image: '../../../assets/Image/Design/proyecto2/Fondo copia 6.webp',
       width: 600,
       height: 300,
@@ -225,26 +232,35 @@ export const projectsDesign = [
     users: {
       title: 'Entender al usuario',
       descripcion: [
-        'Realice entrevistas a usuarios, siguiente a esto, las convertí en mapas de empatía para comprender mejor a los usuarios objetivos y sus necesidades.',
-        'Descubrí que varios usuarios quieren adoptar una mascota, pero no saben cuáles son los requisitos, no saben como empezar el proceso o a donde ir para informarse, muchos sitios web de información de adopción no son claros y tienen un diseño desordenado, muchos usuarios se frustraron por esto, esto provoco que la idea de querer adoptar una mascota no sea una experiencia agradable terminando a si el proceso de adopción',
+        'Entrevisté a diversos usuarios y luego transformé sus experiencias en mapas de empatía para obtener una comprensión más profunda de nuestros usuarios objetivo y sus necesidades. Durante este proceso, descubrí que muchos individuos desean adoptar una mascota, pero se encuentran perdidos en cuanto a los requisitos y cómo dar inicio al proceso.',
+        'La falta de claridad en la información y el diseño confuso de numerosos sitios web de adopción de mascotas ha generado frustración entre los usuarios. Esta frustración ha resultado en que la idea de adoptar una mascota no sea una experiencia placentera, lo que en última instancia obstaculiza el proceso de adopción.',
       ],
       weakPoints: [
-        'Los diseños de páginas de adopción para mascotas tienden a estar cargados de mucha información sin un orden esto hace que la navegación sea confusa',
-        'Varias páginas que cuentan con la opción de donaciones o compras, solo cuentan con un método de pago, además de tener muchos botones de pago que no cumplen su funcionalidad, esto no permite que los usuarios terminen su proceso de compra.',
-        'Los sitios web no cuentan con una experiencia de navegación atractiva, imágenes de baja resolución con un tamaño muy grande.',
-        'Los sitios web no cuentan con la funcionalidad de lector de pantalla o un diseño responsive para diferentes pantallas.',
+        'Los diseños de las páginas de adopción de mascotas suelen estar sobrecargados de información desorganizada, lo que resulta en una experiencia de navegación confusa.',
+        'Muchas páginas que ofrecen opciones de donación o compra se limitan a un solo método de pago y presentan múltiples botones de pago ineficaces, lo que obstaculiza la finalización del proceso de compra por parte de los usuarios.',
+        'Los sitios web carecen de una experiencia de navegación atractiva, mostrando imágenes de baja resolución en un tamaño desproporcionado.',
+        'Los sitios web no ofrecen funcionalidades de lector de pantalla ni un diseño adaptable que se adapte a diferentes tamaños de pantalla.',
       ],
 
       person1: {
         title: 'Persona',
         name: 'Roberto',
         descripcion: [
-          'Roberto es un adulto que quiere adoptar una mascota, necesita un sitio web que le permita muestre mascotas que sea compatible con el, le brinde la información necesaria del proceso de adopción y que permita iniciar el proceso desde cualquier lugar, por que quiere que el proceso de adopción sea agradable y rápido',
+          'Roberto, un joven de 25 años, está emocionado por la idea de adoptar una mascota. Sin embargo, se siente abrumado por la falta de información clara en los sitios web de adopción y la preocupación por la seguridad. Roberto busca un sitio web que le permita encontrar mascotas compatibles con su estilo de vida. Desea recibir notificaciones para estar al tanto de las nuevas mascotas disponibles. Para él, es fundamental que el proceso de adopción sea agradable y rápido, ya que le preocupa no saber cómo comenzar. Está en busca de una experiencia que le brinde confianza y facilidad, asegurándose de que la adopción sea segura y satisfactoria.',
         ],
         image: '../../../assets/Image/Design/proyecto2/persona.webp',
-        width: 400,
-        height: 400,
+        width: 300,
+        height: 250,
       },
+    },
+
+    mapSite: {
+      title: 'Mapa del sitio',
+      descripcion: [
+        'La dificultad de navegación del sitio web fue uno de los puntos débiles para los usuarios, me dedique a crear un mapa del sitio.',
+        'Mi objetivo fue mejorar la navegación general de la página, la estructura elegida se diseño para ser simple y fácil.',
+      ],
+      img: '../../../assets/Image/Design/proyecto2/mpaSitio.webp',
     },
 
     design: {
@@ -254,27 +270,27 @@ export const projectsDesign = [
           'Acopntinuación esbocé esquemas de página en papel para las pantallas, teniendo en cuenta los puntos débiles de navegación.',
           'Las variaciónes de esquema de página en papel de la pantalal de inicio, se enfoca en optimizar la experiencia de navegación de lso usuarios',
         ],
-        image: '../../../assets/Image/GitHub-Mark.png',
-        width: 400,
-        height: 400,
+        image: '../../../assets/Image/Design/proyecto2/Capa 2.webp',
+        width: 497,
+        height: 663,
       },
       1: {
         title: 'Esquemas de página digitales',
         descripcion: [
           'Pasar los esquemas de página en papel a esquemas digitales, fácilito la comprensión de como el rediseño pudo ayudar lso puntos debiles del usuario y a mejorar la experiencia de usuario.',
         ],
-        image: '../../../assets/Image/Design/proyecto2/Web 1920 – 1.webp',
+        image: '../../../assets/Image/Design/proyecto2/paginasDigitales.webp',
         width: 400,
-        height: 400,
+        height: 369,
       },
       2: {
         title: 'prototipo de baja fidelidad',
         descripcion: [
           'Para este prototipo de baja fidelidad, conecté todas las pantallas involucradas en el flujo principal del usuario, Completar un formulario de adopción.',
         ],
-        image: '../../../assets/Image/Design/proyecto2/protobajafidelidad.webp',
-        width: 400,
-        height: 400,
+        image: '../../../assets/Image/Design/proyecto2/proto-baja.webp',
+        width: 900,
+        height: 633,
         link: 'https://xd.adobe.com/view/cfb0e9a6-a305-4c4e-b704-212238f80319-9ae3/?fullscreen&hints=off',
       },
       3: {
@@ -307,16 +323,16 @@ export const projectsDesign = [
         0: {
           descripcion:
             'Basándome en las conclusiones del estudio de facilidad de uso, realicé cambios, haciendo los textos más claros y mas visibles para el usuario, uno de los cambios realizados fue agregar la función de llenar un formulario de adopción al inicio de la pantalla y agregarle un texto más marcado para que resaltara.',
-          image1: '../../../assets/Image/Design/proyecto2/TV - 1.webp',
-          width: 400,
-          height: 400,
+          image1: '../../../assets/Image/Design/proyecto2/maquetas1.webp',
+          width: 800,
+          height: 511,
         },
         1: {
           descripcion:
             'Para que fuera más fácil para los usuarios se les agrego una opción de pregunta si requieren agendar una cita previa, además se agrego información relevante sobro el formulario de adopción.',
-          image1: '../../../assets/Image/Design/proyecto2/TV - 2.webp',
-          width: 400,
-          height: 400,
+          image1: '../../../assets/Image/Design/proyecto2/maquetas1.webp',
+          width: 800,
+          height: 511,
         },
       },
 
@@ -324,9 +340,10 @@ export const projectsDesign = [
         title: 'prototipo de alta fidelidad',
         descripcion:
           'El prototipo de alta fidelidad siguió el mismo flujo de usuario que el prototipo de baja fidelidad, agregue cambios que se hicieron luego de el estudio de facilidad de uso, a si como otros cambios sugeridos por el equipo.',
-        image: '../../../assets/Image/Design/proyecto2/TV - 3.webp',
-        width: 400,
-        height: 400,
+        image:
+          '../../../assets/Image/Design/proyecto2/prototipo de alta fidelidad.webp',
+        width: 900,
+        height: 633,
         link: 'https://xd.adobe.com/view/43604d7b-37b4-4369-8258-ca89f5df369e-1633/',
       },
 
@@ -418,6 +435,17 @@ export const projectsDesign = [
         width: 400,
         height: 400,
       },
+    },
+
+    mapSite: {
+      title: 'Mapa del sitio',
+      descripcion: [
+        'La dificultad de navegación del sitio web fue uno de los puntos débiles para los usuarios, me dedique a crear un mapa del sitio.',
+        'Mi objetivo fue mejorar la navegación general de la página, la estructura elegida se diseño para ser simple y fácil.',
+      ],
+      img: '../../../assets/Image/Design/proyecto2/mpaSitio.webp',
+      width: 800,
+      height: 563,
     },
 
     design: {

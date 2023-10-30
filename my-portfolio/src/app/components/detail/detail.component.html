@@ -58,12 +58,13 @@
         </ng-container>
       </span>
 
-      <ul *ngIf="this.projects.users.weakPoints[0].length > 0">
-        <span *ngFor="let resumen of this.projects.users.weakPoints">
-          <li>{{ resumen }}</li>
-          <br />
-        </span>
-      </ul>
+      <ng-container *ngIf="this.projects.users.weakPoints[0].length > 0">
+        <ul>
+          <ng-container *ngFor="let resumen of this.projects.users.weakPoints">
+            <li>{{ resumen }}</li>
+          </ng-container>
+        </ul>
+      </ng-container>
     </div>
   </section>
 
@@ -90,6 +91,14 @@
   </section>
 
   <br />
+
+  <section *ngIf="this.projects.mapSite.title.length > 3">
+    <h2>{{ this.projects.mapSite.title }}</h2>
+    <ng-container *ngFor="let p of this.projects.mapSite.descripcion">
+      <p>{{ p }}</p>
+    </ng-container>
+    <img [src]="[this.projects.mapSite.img]" alt="" />
+  </section>
 
   <section class="below schemasScreen fondo medidas">
     <span>

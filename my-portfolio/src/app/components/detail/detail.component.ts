@@ -57,6 +57,12 @@ export class DetailComponent {
       },
     },
 
+    mapSite: {
+      title: '',
+      descripcion: [''],
+      img: '',
+    },
+
     design: {
       0: {
         title: '',
