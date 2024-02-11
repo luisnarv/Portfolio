@@ -1,39 +1,37 @@
-<div class="main-projects">
-    <app-navbar></app-navbar>
-    <router-outlet></router-outlet>
-    <div class="style">
-        <section class="left"></section>
-        <section class="right"></section>
-    </div>
+<app-navbar></app-navbar>
+<router-outlet></router-outlet>
 
-    <div class="projects">
+<div class="projects">
+  <h1>Proyects</h1>
 
-        <div class="nextPage">
-            <button class="buttonLEft" (click)="changueCardRight()">{{"flecha derecha"}}</button>
-           <button class="buttonRight" (click)="changueCardLeft()">{{"flecha izquierda"}}
-           </button>
-       </div>
+  <span class="direccional main-projects">
+    <img
+      src="../../../assets/Image/icons/right.svg"
+      (click)="changueCardRight()"
+      alt="button-Right"
+    />
+    <img
+      src="../../../assets/Image/icons/left.svg"
+      (click)="changueCardLeft()"
+      alt="button-Left"
+    />
+  </span>
 
-        proyects
-        <!-- <section>
-            <ul>
-                <li>1</li>
-                <li>2</li>
-                <li>3</li>
-            </ul>
-            <img src="./../../../assets/Image/Sin título.png" alt="prueba.png" width="100%" height="100%">
-        </section> -->
+  <section
+    class="projects-info"
+    *ngFor="let project of projects.slice(this.left, this.right)"
+  >
+    <span>
+      <h2>{{ project.title }}</h2>
+      <p>{{ project.descripcion }}</p>
+    </span>
 
-        
-        <section *ngFor="let pro of projects.slice(this.left,this.right)" >
-            <ul>
-                <li>{{pro.title}}</li>
-                <li>{{pro.img}}</li>
-                <li>{{pro.descripcion}}</li>
-            </ul>
-            <img src="./../../../assets/Image/Sin título.png" alt="prueba.png" width="100%" height="100%">
-        </section>
-
-
-    </div>
+    <section class="images">
+      <span *ngFor="let image of project.img">
+        <!-- <a [routerLink]="['/designProjects', 'detail', project.title]">
+          <img src="{{ image }}" alt="prueba.png" width="100%" height="100%s" />
+        </a> -->
+      </span>
+    </section>
+  </section>
 </div>

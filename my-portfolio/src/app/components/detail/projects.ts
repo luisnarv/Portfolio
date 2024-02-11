@@ -100,8 +100,8 @@ export const projectsDesign = [
       3: {
         title: 'Estudio de facilidad de uso: hallazgos ',
         descripcion: [
-          'Realicé dos rondas de estudios de facilidad de uso.',
-          'Los hallazgos del primer estudio ayudaron a guiar los diseños para convertirlos de esquemas de página en maquetas. El segundo estudio utilizó un prototipo de alta fidelidad y reveló qué aspectos de las maquetas necesitaban refinarse.',
+          'Llevé a cabo dos rondas de evaluaciones de facilidad de uso.',
+          'Los resultados del primer estudio orientaron la evolución de los diseños, permitiendo que pasaran de ser simples esquemas de página a maquetas más detalladas. En la segunda ronda, empleé un prototipo de alta fidelidad, lo que reveló áreas específicas en las maquetas que requerían ajustes y refinamientos.',
         ],
 
         width: 400,
@@ -159,7 +159,7 @@ export const projectsDesign = [
         title: 'Accesibilidad',
         descripcion: [
           'Se incorporó texto alternativo a las imágenes para lectores de pantalla para proporcionar acceso a los usuarios con problemas de visión.',
-          'Los usuarios quieren más opciones de personalización como cantidad.',
+          'Se usaron íconos para facilitar la navegación.',
           'Se usaron imágenes detalladas de los alimentos para ayudar a todos los usuarios a comprender mejor los diseños.',
         ],
       },

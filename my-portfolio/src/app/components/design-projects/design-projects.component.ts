@@ -13,9 +13,9 @@ export class DesignProjectsComponent {
 
   constructor(private service: LocalDataService, private router: Router) {}
 
-  isActive(route: number): boolean {
+  isActive(): boolean {
     // console.log(this.router.url)
-    return this.router.url.length > route;
+    return this.router.url.length > 22;
   }
   getID(name: string) {
     // console.log("id ",name)
